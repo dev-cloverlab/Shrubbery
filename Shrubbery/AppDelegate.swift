@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // Init the log module.
-        log.addDestination(ConsoleDestination())
+        let console = ConsoleDestination()
+        console.format = LOGGER_FORMAT
+        LOGGER.addDestination(console)
 
         return true
     }
