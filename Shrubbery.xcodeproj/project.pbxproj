@@ -11,6 +11,7 @@
 		60700041FB4C9F3579C0F1FA /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F983957E4F3B424077A /* Log.swift */; };
 		607006EFBF48971DDEE7DB05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700931B98AB9E44E924735 /* ViewController.swift */; };
 		6070090E3AA1C66CB0F002AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */; };
+		607009C19C9F630CC9A6423D /* ObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070019E10623AC64F2F3BF7 /* ObjectExt.swift */; };
 		60700AFE519EE1949BD35D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60700613F24FAFF9E2FA694C /* Assets.xcassets */; };
 		60700D7DF7660D0E283E4A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607000C0299FD404C857B1F5 /* Main.storyboard */; };
 		60700E3E12577891180901CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6070043634FBDBA75C6D84F2 /* LaunchScreen.storyboard */; };
@@ -20,6 +21,7 @@
 		12AE27D383FD2C8A4418B790 /* Pods-Shrubbery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shrubbery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shrubbery/Pods-Shrubbery.release.xcconfig"; sourceTree = "<group>"; };
 		4AE5FA136FD00E5428A1957B /* Pods-Shrubbery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shrubbery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shrubbery/Pods-Shrubbery.debug.xcconfig"; sourceTree = "<group>"; };
 		607001006CC5EEC1260E4576 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		6070019E10623AC64F2F3BF7 /* ObjectExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectExt.swift; sourceTree = "<group>"; };
 		60700613F24FAFF9E2FA694C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60700931B98AB9E44E924735 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				60700F983957E4F3B424077A /* Log.swift */,
+				6070019E10623AC64F2F3BF7 /* ObjectExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				607006EFBF48971DDEE7DB05 /* ViewController.swift in Sources */,
 				6070090E3AA1C66CB0F002AB /* AppDelegate.swift in Sources */,
 				60700041FB4C9F3579C0F1FA /* Log.swift in Sources */,
+				607009C19C9F630CC9A6423D /* ObjectExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
