@@ -93,3 +93,9 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
+.DS_Store
+.idea/codeStyles/codeStyleConfig.xml
+.idea/markdown-navigator.xml
+.idea/workspace.xml
+Podfile.lock
+Pods/*

@@ -1,10 +1,10 @@
 # open source
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '10.0'
+platform :ios, '11.2'
 use_frameworks!
 
-target 'shrubbery' do
+target 'Shrubbery' do
   pod 'Alamofire', '~> 4.6'
 
   pod 'RxSwift', '~> 4.0'
@@ -12,13 +12,13 @@ target 'shrubbery' do
 
   pod 'SwiftyJSON', '~> 4.0.0'
 
-  target 'shrubberyTests' do
-    inherit! :search_paths
-    pod 'RxBlocking', '~> 4.0'
-    pod 'RxTest', '~> 4.0'
-  end
-  target 'shrubberyUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+#  target 'ShrubberyTests' do
+#    inherit! :search_paths
+#    pod 'RxBlocking', '~> 4.0'
+#    pod 'RxTest', '~> 4.0'
+#  end
+#  target 'ShrubberyUITests' do
+#    inherit! :search_paths
+#    # Pods for testing
+#  end
 end
