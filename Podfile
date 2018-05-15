@@ -5,12 +5,14 @@ platform :ios, '11.2'
 use_frameworks!
 
 target 'Shrubbery' do
-  pod 'Alamofire', '~> 4.6'
+  pod 'Alamofire', '~> 4.7.2'
 
-  pod 'RxSwift', '~> 4.0'
-  pod 'RxCocoa', '~> 4.0'
+  pod 'RxSwift', '~> 4.1.2'
+  pod 'RxCocoa', '~> 4.1.2'
 
-  pod 'SwiftyJSON', '~> 4.0.0'
+  pod 'SwiftyJSON', '~> 4.1.0'
+
+  pod 'SwiftyBeaver'
 
 #  target 'ShrubberyTests' do
 #    inherit! :search_paths

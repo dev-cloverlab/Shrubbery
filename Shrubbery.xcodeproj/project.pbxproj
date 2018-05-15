@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607004273246F80EA1EAFA47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607002BA4424043A43D9C012 /* AppDelegate.swift */; };
-		607005C353F8F204528DB560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60700E5F7F857C8ACA4B9790 /* Assets.xcassets */; };
+		397131E5DEED8F6BF696DA33 /* Pods_Shrubbery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945C1D9720AA8CE700BBC574 /* Pods_Shrubbery.framework */; };
+		60700041FB4C9F3579C0F1FA /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F983957E4F3B424077A /* Log.swift */; };
 		607006EFBF48971DDEE7DB05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700931B98AB9E44E924735 /* ViewController.swift */; };
-		60700886F932BC160FFD92C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60700CF7DCF50DA1A23F5A79 /* LaunchScreen.storyboard */; };
+		6070090E3AA1C66CB0F002AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */; };
+		60700AFE519EE1949BD35D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60700613F24FAFF9E2FA694C /* Assets.xcassets */; };
 		60700D7DF7660D0E283E4A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607000C0299FD404C857B1F5 /* Main.storyboard */; };
-		CDF221AB351BF26800BB7335 /* Pods_Shrubbery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6A6986FD41FB828D0DF90B /* Pods_Shrubbery.framework */; };
+		60700E3E12577891180901CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6070043634FBDBA75C6D84F2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12AE27D383FD2C8A4418B790 /* Pods-Shrubbery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shrubbery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shrubbery/Pods-Shrubbery.release.xcconfig"; sourceTree = "<group>"; };
 		4AE5FA136FD00E5428A1957B /* Pods-Shrubbery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shrubbery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shrubbery/Pods-Shrubbery.debug.xcconfig"; sourceTree = "<group>"; };
-		607002BA4424043A43D9C012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6070086B331D4F6879898B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		607001006CC5EEC1260E4576 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		60700613F24FAFF9E2FA694C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60700931B98AB9E44E924735 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60700E0B354BCD788E706105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60700E305B40059CA2094C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		60700E5F7F857C8ACA4B9790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		60700F54B4D52610EE75B8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		60700F983957E4F3B424077A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		945C1D9720AA8CE700BBC574 /* Pods_Shrubbery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Shrubbery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D9353320AA753300520CDF /* Shrubbery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shrubbery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6A6986FD41FB828D0DF90B /* Pods_Shrubbery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shrubbery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -33,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF221AB351BF26800BB7335 /* Pods_Shrubbery.framework in Frameworks */,
+				397131E5DEED8F6BF696DA33 /* Pods_Shrubbery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +50,30 @@
 				12AE27D383FD2C8A4418B790 /* Pods-Shrubbery.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		607000630C953BC7F2C5D28D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				60700F983957E4F3B424077A /* Log.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		607001AF500194FD79A8F566 /* SupportedFiles */ = {
+			isa = PBXGroup;
+			children = (
+				607001006CC5EEC1260E4576 /* Info.plist */,
+			);
+			path = SupportedFiles;
+			sourceTree = "<group>";
+		};
+		607001D9A3B62C695BA56E0C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				607000630C953BC7F2C5D28D /* Extensions */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		607003029AE5D5FD7F635F36 /* Modules */ = {
@@ -70,16 +97,25 @@
 		60700747A750ECCBB13DABBA /* Shrubbery */ = {
 			isa = PBXGroup;
 			children = (
-				60700F54B4D52610EE75B8F8 /* Info.plist */,
-				60700E5F7F857C8ACA4B9790 /* Assets.xcassets */,
-				60700CF7DCF50DA1A23F5A79 /* LaunchScreen.storyboard */,
-				607002BA4424043A43D9C012 /* AppDelegate.swift */,
+				945C1D7820AA88C800BBC574 /* Base.lproj */,
 				607000C0299FD404C857B1F5 /* Main.storyboard */,
 				60700931B98AB9E44E924735 /* ViewController.swift */,
 				607003029AE5D5FD7F635F36 /* Modules */,
 				60700D517AC2A15B1B38A076 /* Entities */,
+				60700EB994B354175D4A5E23 /* Resources */,
+				607001AF500194FD79A8F566 /* SupportedFiles */,
+				607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */,
+				607009A525628B5E69A428EB /* Common */,
 			);
 			path = Shrubbery;
+			sourceTree = "<group>";
+		};
+		607009A525628B5E69A428EB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				607001D9A3B62C695BA56E0C /* Utils */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		60700B0C8AF129DDA972706F /* Base */ = {
@@ -96,9 +132,26 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		60700EB994B354175D4A5E23 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60700613F24FAFF9E2FA694C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		945C1D7820AA88C800BBC574 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				6070043634FBDBA75C6D84F2 /* LaunchScreen.storyboard */,
+			);
+			name = Base.lproj;
+			sourceTree = "<group>";
+		};
 		E536AB415AC33EF0B43DDB32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				945C1D9720AA8CE700BBC574 /* Pods_Shrubbery.framework */,
 				AC6A6986FD41FB828D0DF90B /* Pods_Shrubbery.framework */,
 			);
 			name = Frameworks;
@@ -161,9 +214,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607005C353F8F204528DB560 /* Assets.xcassets in Resources */,
-				60700886F932BC160FFD92C9 /* LaunchScreen.storyboard in Resources */,
 				60700D7DF7660D0E283E4A62 /* Main.storyboard in Resources */,
+				60700AFE519EE1949BD35D50 /* Assets.xcassets in Resources */,
+				60700E3E12577891180901CB /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +251,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -205,6 +259,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607004273246F80EA1EAFA47 /* AppDelegate.swift in Sources */,
 				607006EFBF48971DDEE7DB05 /* ViewController.swift in Sources */,
+				6070090E3AA1C66CB0F002AB /* AppDelegate.swift in Sources */,
+				60700041FB4C9F3579C0F1FA /* Log.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,10 +291,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		60700CF7DCF50DA1A23F5A79 /* LaunchScreen.storyboard */ = {
+		6070043634FBDBA75C6D84F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6070086B331D4F6879898B5B /* Base */,
+				60700E0B354BCD788E706105 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -363,7 +419,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U9W4S92WSP;
-				INFOPLIST_FILE = shrubbery/Info.plist;
+				INFOPLIST_FILE = shrubbery/supportedfiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloverlab.shrubbery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,7 +435,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U9W4S92WSP;
-				INFOPLIST_FILE = shrubbery/Info.plist;
+				INFOPLIST_FILE = shrubbery/supportedfiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloverlab.shrubbery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
