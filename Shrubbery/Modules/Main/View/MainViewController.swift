@@ -19,6 +19,7 @@ class MainViewController: UIViewController, MainViewInput {
         super.viewDidLoad()
 
         output.viewIsReady()
+        logv("vvvvvvvvvvvvvvvvvvv")
     }
 
     // MARK: MainViewInput
