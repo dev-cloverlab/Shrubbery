@@ -6,5 +6,4 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 class MainInteractor: MainInteractorInput {
-    weak var output: MainInteractorOutput!
 }

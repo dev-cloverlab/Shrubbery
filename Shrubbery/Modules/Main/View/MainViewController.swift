@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 class MainViewController: UIViewController, MainViewInput {
-    var output: MainViewOutput!
+    var output: MainPresenterInput!
     @IBOutlet weak var kkk: UIButton!
 
     // MARK: Life cycle
