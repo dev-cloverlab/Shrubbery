@@ -5,7 +5,7 @@
 //  Created by Jieyi on 15/05/2018.
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
-class MainPresenter: MainPresenterInput, MainInteractorOutput {
+class MainPresenter: MainPresenterInput {
     weak var view: MainViewInput!
     var interactor: MainInteractorInput!
     var router: MainRouterInput!

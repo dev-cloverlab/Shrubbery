@@ -8,5 +8,5 @@
 
 import Foundation
 
-protocol MainRouterInput {
+protocol MainRouterInput: Router {
 }
