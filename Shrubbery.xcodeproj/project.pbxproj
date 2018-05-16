@@ -15,7 +15,6 @@
 		42D5CA22E873274288930756 /* MainInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3B3DE7674A5E93E8A579E4 /* MainInitializer.swift */; };
 		455DC4327CBD7455BBDFFDCD /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3ACCA33E7DA623071BEAD /* MainModuleInput.swift */; };
 		60700041FB4C9F3579C0F1FA /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F983957E4F3B424077A /* Log.swift */; };
-		607006EFBF48971DDEE7DB05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700931B98AB9E44E924735 /* ViewController.swift */; };
 		6070090E3AA1C66CB0F002AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */; };
 		607009C19C9F630CC9A6423D /* ObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070019E10623AC64F2F3BF7 /* ObjectExt.swift */; };
 		60700AFE519EE1949BD35D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60700613F24FAFF9E2FA694C /* Assets.xcassets */; };
@@ -38,7 +37,6 @@
 		6070019E10623AC64F2F3BF7 /* ObjectExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectExt.swift; sourceTree = "<group>"; };
 		60700613F24FAFF9E2FA694C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60700931B98AB9E44E924735 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		60700B6AC725B0A0A31874AD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		60700E0B354BCD788E706105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60700F983957E4F3B424077A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				945C1D7820AA88C800BBC574 /* Base.lproj */,
-				60700931B98AB9E44E924735 /* ViewController.swift */,
 				607003029AE5D5FD7F635F36 /* Modules */,
 				60700D517AC2A15B1B38A076 /* Entities */,
 				60700EB994B354175D4A5E23 /* Resources */,
@@ -353,7 +350,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607006EFBF48971DDEE7DB05 /* ViewController.swift in Sources */,
 				6070090E3AA1C66CB0F002AB /* AppDelegate.swift in Sources */,
 				60700041FB4C9F3579C0F1FA /* Log.swift in Sources */,
 				607009C19C9F630CC9A6423D /* ObjectExt.swift in Sources */,
@@ -504,7 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U9W4S92WSP;
 				INFOPLIST_FILE = shrubbery/supportedfiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloverlab.shrubbery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,7 +516,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U9W4S92WSP;
 				INFOPLIST_FILE = shrubbery/supportedfiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloverlab.shrubbery;
 				PRODUCT_NAME = "$(TARGET_NAME)";

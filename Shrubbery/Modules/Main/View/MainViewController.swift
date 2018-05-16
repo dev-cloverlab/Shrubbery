@@ -13,16 +13,11 @@ import RxCocoa
 class MainViewController: UIViewController, MainViewInput {
     var output: MainViewOutput!
     @IBOutlet weak var kkk: UIButton!
-    @IBOutlet weak var ggg: UITableView!
 
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        output.viewIsReady()
-    }
-
-    @IBAction func kkkTouchDown(_ sender: Any) {
-        logw("hello world")
+//        output.viewIsReady()
     }
 
     // MARK: MainViewInput
