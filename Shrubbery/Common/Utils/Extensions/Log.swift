@@ -1,3 +1,11 @@
+//
+//  Log.swift
+//  Shrubbery
+//
+//  Created by jieyi on 2018/05/17.
+//  Copyright © 2018 CloverLab. Inc. All rights reserved.
+//
+
 import SwiftyBeaver
 
 let LOGGER_FORMAT = "$Dyyyy-MM-dd HH:mm:ss$d $N.$F:$l $L: $M"
