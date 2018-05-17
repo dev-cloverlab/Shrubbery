@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol MainInteractorInput: Interactor {
+    func getFakeList() -> Single<[String]>
 }

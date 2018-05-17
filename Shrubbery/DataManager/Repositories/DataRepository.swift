@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 class DataRepository: DataStore {
     var local: DataStore!
@@ -17,7 +18,7 @@ class DataRepository: DataStore {
         remote = remoteStore
     }
 
-    func fetchFakeList() -> RxSwift.Single<[String]> {
+    func fetchFakeList() -> Single<[String]> {
         return remote.fetchFakeList()
     }
 }

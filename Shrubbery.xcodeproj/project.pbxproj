@@ -18,7 +18,7 @@
 		6070020BF394B4D0C285881A /* RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004EDC14609D3FCE000F8 /* RemoteService.swift */; };
 		607003173AD4A19D3FF31116 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607003C6FDB1A5F53C57F1A5 /* Interactor.swift */; };
 		607003A73697795B78EDD9B5 /* RemoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700168086EF555BCC26217 /* RemoteDataStore.swift */; };
-		607004D66A356DBD56747B8C /* ShrubberyServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F8473942B2514504568 /* ShrubberyServiceImpl.swift */; };
+		607004D66A356DBD56747B8C /* ShrubberyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F8473942B2514504568 /* ShrubberyService.swift */; };
 		607006F9D2AFF3F46517658E /* LocalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070042716E57298E63D3768 /* LocalDataStore.swift */; };
 		60700890A24A16E08E8A728F /* ShrubberyCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607008BDDE4EDBD42ED02C8F /* ShrubberyCoreData.swift */; };
 		607008A60377FEB21A05DCC0 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700D9049AC9922802CEDC5 /* DataStore.swift */; };
@@ -60,7 +60,7 @@
 		60700B6AC725B0A0A31874AD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		60700D9049AC9922802CEDC5 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		60700E0B354BCD788E706105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		60700F8473942B2514504568 /* ShrubberyServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrubberyServiceImpl.swift; sourceTree = "<group>"; };
+		60700F8473942B2514504568 /* ShrubberyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrubberyService.swift; sourceTree = "<group>"; };
 		60700F983957E4F3B424077A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		65D811776866E895D5A5F1B5 /* MainRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouterInput.swift; sourceTree = "<group>"; };
 		783A0880B3DF42B3F8A78C19 /* MainRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
@@ -276,7 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				60700907EE7EF22CF4E9EB2F /* LocalCoreData.swift */,
-				60700F8473942B2514504568 /* ShrubberyServiceImpl.swift */,
+				60700F8473942B2514504568 /* ShrubberyService.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -487,7 +487,7 @@
 				607001362AD33A4B5DD4A25C /* DataRepository.swift in Sources */,
 				60700160CB5EB8DF7496C9B9 /* LocalCoreData.swift in Sources */,
 				6070020BF394B4D0C285881A /* RemoteService.swift in Sources */,
-				607004D66A356DBD56747B8C /* ShrubberyServiceImpl.swift in Sources */,
+				607004D66A356DBD56747B8C /* ShrubberyService.swift in Sources */,
 				60700890A24A16E08E8A728F /* ShrubberyCoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

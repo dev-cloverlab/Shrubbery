@@ -11,4 +11,6 @@ protocol MainPresenterInput: Presenter {
         Notify presenter that view is ready
     */
     func viewIsReady()
+
+    func getList()
 }

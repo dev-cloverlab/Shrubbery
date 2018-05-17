@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import RxSwift
 
 class ShrubberyCoreData: LocalCoreData {
-    func retrieveFakeList() -> RxSwift.Single<[String]> {
+    func retrieveFakeList() -> Single<[String]> {
         fatalError("retrieveFakeList() has not been implemented")
     }
 }

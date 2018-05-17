@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import RxSwift
 
-class ShrubberyServiceImpl: RemoteService {
-    func retrieveFakeList() -> RxSwift.Single<[String]> {
+class ShrubberyService: RemoteService {
+    func retrieveFakeList() -> Single<[String]> {
         fatalError("retrieveFakeList() has not been implemented")
     }
 }

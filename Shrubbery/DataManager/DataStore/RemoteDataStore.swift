@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 class RemoteDataStore: DataStore {
     var service: RemoteService!
@@ -15,7 +16,11 @@ class RemoteDataStore: DataStore {
         self.service = service
     }
 
-    func fetchFakeList() -> RxSwift.Single<[String]> {
-        fatalError("fetchWatchList() has not been implemented")
+    func fetchFakeList() -> Single<[String]> {
+        return Single.create { single in
+            single(.success(["1231", "4531gfw", "fref134f134", "fjivdfji"]))
+            return Disposables.create {
+            }
+        }
     }
 }

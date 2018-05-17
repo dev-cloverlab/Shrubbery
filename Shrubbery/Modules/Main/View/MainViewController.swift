@@ -11,15 +11,21 @@ import RxSwift
 import RxCocoa
 
 class MainViewController: UIViewController, MainViewInput {
-    var output: MainPresenterInput!
+    var presenter: MainPresenterInput!
     @IBOutlet weak var kkk: UIButton!
 
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        output.viewIsReady()
+        presenter.viewIsReady()
         logv("vvvvvvvvvvvvvvvvvvv")
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        presenter.getList()
     }
 
     // MARK: MainViewInput

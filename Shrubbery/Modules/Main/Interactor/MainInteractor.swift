@@ -5,5 +5,17 @@
 //  Created by Jieyi on 15/05/2018.
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
+
+import RxSwift
+
 class MainInteractor: MainInteractorInput {
+    var repository: DataStore!
+
+    init(repository data: DataStore) {
+        repository = data
+    }
+
+    func getFakeList() -> Single<[String]> {
+        return repository.fetchFakeList()
+    }
 }

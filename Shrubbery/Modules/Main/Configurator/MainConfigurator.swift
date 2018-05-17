@@ -16,13 +16,18 @@ class MainModuleConfigurator {
     }
 
     private func configure(viewController: MainViewController) {
-        let interactor = MainInteractor()
+        // MARK: Data Manager
+        let local = ShrubberyCoreData()
+        let remote = ShrubberyService()
+        let repository = DataRepository(local: LocalDataStore(coredata: local), remote: RemoteDataStore(remote: remote))
+
+        let interactor = MainInteractor(repository: repository)
         let router = MainRouter()
         let presenter = MainPresenter()
 
         presenter.view = viewController
         presenter.router = router
         presenter.interactor = interactor
-        viewController.output = presenter
+        viewController.presenter = presenter
     }
 }
