@@ -6,7 +6,6 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import Foundation
 import RxSwift
 
 class DataRepository: DataStore {
@@ -18,7 +17,7 @@ class DataRepository: DataStore {
         remote = remoteStore
     }
 
-    func fetchFakeList() -> Single<[String]> {
+    func fetchFakeList() -> Single<FakeEntity> {
         return remote.fetchFakeList()
     }
 }

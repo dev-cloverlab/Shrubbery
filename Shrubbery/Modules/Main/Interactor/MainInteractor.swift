@@ -15,7 +15,7 @@ class MainInteractor: MainInteractorInput {
         repository = data
     }
 
-    func getFakeList() -> Single<[String]> {
+    func getFakeList() -> Single<FakeEntity> {
         return repository.fetchFakeList()
     }
 }

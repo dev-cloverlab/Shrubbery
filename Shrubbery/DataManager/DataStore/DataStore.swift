@@ -9,5 +9,5 @@
 import RxSwift
 
 protocol DataStore {
-    func fetchFakeList() -> Single<[String]>
+    func fetchFakeList() -> Single<FakeEntity>
 }

@@ -6,9 +6,8 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import Foundation
 import RxSwift
 
 protocol RemoteService {
-    func retrieveFakeList() -> Single<[String]>
+    func retrieveFakeList() -> Single<FakeEntity>
 }

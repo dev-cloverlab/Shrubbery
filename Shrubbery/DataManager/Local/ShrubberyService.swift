@@ -6,11 +6,10 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import Foundation
 import RxSwift
 
 class ShrubberyService: RemoteService {
-    func retrieveFakeList() -> Single<[String]> {
+    func retrieveFakeList() -> Single<FakeEntity> {
         fatalError("retrieveFakeList() has not been implemented")
     }
 }

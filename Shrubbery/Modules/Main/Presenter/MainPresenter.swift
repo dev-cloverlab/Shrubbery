@@ -17,8 +17,7 @@ class MainPresenter: MainPresenterInput {
     }
 
     func getList() {
-        interactor.getFakeList().subscribe {
-            logd($0)
+        interactor.getFakeList().subscribe { single in
         }
     }
 }

@@ -6,7 +6,6 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import Foundation
 import RxSwift
 
 class LocalDataStore: DataStore {
@@ -16,7 +15,7 @@ class LocalDataStore: DataStore {
         localCoreData = local
     }
 
-    func fetchFakeList() -> Single<[String]> {
+    func fetchFakeList() -> Single<FakeEntity> {
         fatalError("fetchWatchList() has not been implemented")
     }
 }

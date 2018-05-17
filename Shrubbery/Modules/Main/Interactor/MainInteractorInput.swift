@@ -10,5 +10,5 @@ import Foundation
 import RxSwift
 
 protocol MainInteractorInput: Interactor {
-    func getFakeList() -> Single<[String]>
+    func getFakeList() -> Single<FakeEntity>
 }
