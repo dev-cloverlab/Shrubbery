@@ -9,4 +9,13 @@
 import Foundation
 
 class RemoteDataStore: DataStore {
+    var service: RemoteService!
+
+    init(remote service: RemoteService) {
+        self.service = service
+    }
+
+    func fetchFakeList() -> RxSwift.Single<[String]> {
+        fatalError("fetchWatchList() has not been implemented")
+    }
 }

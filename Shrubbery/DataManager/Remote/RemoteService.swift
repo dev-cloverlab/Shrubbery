@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol RemoteService {
+    func retrieveFakeList() -> Single<[String]>
 }

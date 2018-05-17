@@ -16,4 +16,8 @@ class DataRepository: DataStore {
         local = localStore
         remote = remoteStore
     }
+
+    func fetchFakeList() -> RxSwift.Single<[String]> {
+        return remote.fetchFakeList()
+    }
 }

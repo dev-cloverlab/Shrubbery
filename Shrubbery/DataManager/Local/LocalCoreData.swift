@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import RxSwift
 
-protocol LocalDatabase {
+protocol LocalCoreData {
+    func retrieveFakeList() -> Single<[String]>
 }
