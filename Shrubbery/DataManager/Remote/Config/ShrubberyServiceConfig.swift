@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct ShrubberyConfig {
+struct ShrubberyServiceConfig {
     static let BASE_SERVICE_DOMAIN = "http://172.16.31.166:3000"
 }

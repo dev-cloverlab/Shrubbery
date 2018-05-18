@@ -10,10 +10,12 @@ import RxSwift
 import RxAlamofire
 import ObjectMapper
 
-protocol ShrubberyRemoteExt {
+protocol ShrubberyRequest {
 }
 
-extension ShrubberyRemoteExt {
+extension ShrubberyRequest {
+    // TODO: (jieyi 2018/05/18) Make get request function with the parameters.
+
     func getRequest<T: Mappable>(uri: String) -> Single<T> {
         return string(.get, URL(string: uri)!)
             .mapToObject(type: T.self)
