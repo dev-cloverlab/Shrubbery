@@ -7,9 +7,6 @@
 //
 
 import RxSwift
-import RxAlamofire
-import SwiftyJSON
-import ObjectMapper
 
 class RemoteDataStore: DataStore {
     var service: RemoteService!
@@ -19,14 +16,6 @@ class RemoteDataStore: DataStore {
     }
 
     func fetchFakeList() -> Single<FakeEntity> {
-        return string(.get, URL(string: "http://172.16.31.166:3000/api/v1/info/list")!)
-            .observeOn(MainScheduler.instance)
-            .flatMap { response -> Observable<FakeEntity> in
-                guard let obj = Mapper<FakeEntity>().map(JSONString: response) else {
-                    throw RxError.noElements
-                }
-
-                return Observable.just(obj)
-            }.asSingle()
+        return service.retrieveFakeList()
     }
 }
