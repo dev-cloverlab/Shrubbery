@@ -19,7 +19,6 @@ class MainViewController: UIViewController, MainViewInput {
         super.viewDidLoad()
 
         presenter.viewIsReady()
-        logv("vvvvvvvvvvvvvvvvvvv")
     }
 
     override func viewDidAppear(_ animated: Bool) {
