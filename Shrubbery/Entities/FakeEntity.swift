@@ -6,15 +6,30 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-class FakeEntity: Entity {
-    var infos: [InformationEntity]?
+import ObjectMapper
 
-    class InformationEntity: Entity {
+struct FakeEntity: Entity, Mappable {
+    var infoList: [InformationEntity]?
+
+    init?(map: Map) {
+    }
+
+    mutating func mapping(map: Map) {
+        infoList <- map["infos"]
+    }
+
+    struct InformationEntity: Entity, Mappable {
         var id: Int?
         var title: String?
-        var updated_at: String?
+        var updatedAt: Date?
 
-        init() {
+        init?(map: Map) {
+        }
+
+        mutating func mapping(map: Map) {
+            id <- map["map"]
+            title <- map["title"]
+            updatedAt <- (map["updated_at"], DateTransform())
         }
     }
 }
