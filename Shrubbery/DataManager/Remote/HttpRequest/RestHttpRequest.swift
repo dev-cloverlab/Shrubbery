@@ -10,10 +10,10 @@ import RxSwift
 import RxAlamofire
 import ObjectMapper
 
-protocol ShrubberyRequest {
+protocol RestHttpRequest {
 }
 
-extension ShrubberyRequest {
+extension RestHttpRequest {
     // TODO: (jieyi 2018/05/18) Make get request function with the parameters.
 
     func getRequest<T: Mappable>(uri: String) -> Single<T> {

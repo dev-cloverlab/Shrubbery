@@ -10,7 +10,7 @@ import RxSwift
 import RxAlamofire
 import ObjectMapper
 
-class ShrubberyService: ShrubberyRequest, RemoteService {
+class ShrubberyService: RestHttpRequest, RemoteService {
     func retrieveFakeList() -> Single<FakeEntity> {
         let uri = ShrubberyServiceConfig.BASE_SERVICE_DOMAIN + "/api/v1/info/list"
 
