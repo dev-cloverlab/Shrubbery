@@ -12,7 +12,6 @@ import RxCocoa
 
 class MainViewController: UIViewController, MainViewInput {
     var presenter: MainPresenterInput!
-    @IBOutlet weak var kkk: UIButton!
 
     // MARK: Life cycle
     override func viewDidLoad() {
