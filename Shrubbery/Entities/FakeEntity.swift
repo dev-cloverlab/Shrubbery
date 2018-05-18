@@ -6,10 +6,10 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-class FakeEntity {
+class FakeEntity: Entity {
     var infos: [InformationEntity]?
 
-    class InformationEntity {
+    class InformationEntity: Entity {
         var id: Int?
         var title: String?
         var updated_at: String?

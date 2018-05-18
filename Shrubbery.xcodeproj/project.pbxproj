@@ -32,6 +32,7 @@
 		60700ED6D43490B6AF61EF95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60700B6AC725B0A0A31874AD /* Main.storyboard */; };
 		60700F2A4D066867635B92EB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700442E4382BF75D44E923 /* Router.swift */; };
 		60700FDD11189C73C18E68F0 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007F5D53A13DFB20FF58F /* Presenter.swift */; };
+		60700FDE472E16559667FAA6 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607000315B65E625E1FE2DED /* Entity.swift */; };
 		94EC700F20AAE785002A277E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC700E20AAE785002A277E /* MainViewController.swift */; };
 		954A87D53B2247AEEC6C0CCC /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F9ED70CE617E552865876 /* MainConfigurator.swift */; };
 		AFFA748641539BA8E17525CC /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82414F08BAEC0034F65A4047 /* MainPresenter.swift */; };
@@ -43,6 +44,7 @@
 		12AE27D383FD2C8A4418B790 /* Pods-Shrubbery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shrubbery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shrubbery/Pods-Shrubbery.release.xcconfig"; sourceTree = "<group>"; };
 		4AE5FA136FD00E5428A1957B /* Pods-Shrubbery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shrubbery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shrubbery/Pods-Shrubbery.debug.xcconfig"; sourceTree = "<group>"; };
 		5A2F9ED70CE617E552865876 /* MainConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
+		607000315B65E625E1FE2DED /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		607000C17AAFA7222CF6DE87 /* DataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		607001006CC5EEC1260E4576 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		60700168086EF555BCC26217 /* RemoteDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataStore.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				60700F551DF3F75C63DAD9CD /* FakeEntity.swift */,
+				607000315B65E625E1FE2DED /* Entity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				607004D66A356DBD56747B8C /* ShrubberyService.swift in Sources */,
 				60700890A24A16E08E8A728F /* ShrubberyCoreData.swift in Sources */,
 				60700D0E0D31D1821AE26188 /* FakeEntity.swift in Sources */,
+				60700FDE472E16559667FAA6 /* Entity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

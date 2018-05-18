@@ -18,7 +18,7 @@ class RemoteDataStore: DataStore {
     }
 
     func fetchFakeList() -> Single<FakeEntity> {
-        return string(.get, URL(string: "")!)
+        return string(.get, URL(string: "http://172.16.31.166:3000/api/v1/info/list")!)
             .observeOn(MainScheduler.instance)
             .flatMap { response -> Observable<FakeEntity> in
                 let obj = FakeEntity()
