@@ -18,7 +18,6 @@ class MainPresenter: MainPresenterInput {
 
     func getList() {
         interactor.getFakeList().subscribe { single in
-            logw(single)
             switch single {
                 case .success(let entity):
                     entity.toShowAll()

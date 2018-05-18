@@ -11,37 +11,46 @@ protocol Entity {
 
 extension Entity {
     func toShowAll() {
-        let reflected = Mirror(reflecting: self)
+        // OPTIMIZE: (jieyi 2018/05/18) There's a better way for replacing multiple characters.
+        logi(extractSelf(self: self)
+            .replacingOccurrences(of: "\\", with: "")
+            .replacingOccurrences(of: "\"", with: ""))
+    }
 
-        // Show all information.
-        for case let (label?, value) in reflected.children {
-            switch value {
-                case let entity as Entity:
-                    entity.toShowAll()
-                case let array as Array<Any>:
-                    logd("\(label) : \(type(of: unwrap(any: value)))")
-                    for (index, item) in (value as! Array<Any>).enumerated() {
-                        logw("\(index) :")
-                        (item as! Entity).toShowAll()
-                    }
-                default:
-                    logd("\(label) : \(unwrap(any: value))")
-            }
+    private func extractSelf(self entity: Entity) -> String {
+        let mirror = Mirror(reflecting: entity)
+        var content = [String: String]()
+
+        for case let (label?, value) in mirror.children {
+            content["'\(label)'"] = {
+                switch value {
+                    case let again as Entity:
+                        return extractSelf(self: again)
+                    case let array as Array<Any>:
+                        return extractArray(array: array)
+                    default:
+                        return String(describing: unwrap(any: value))
+                }
+            }()
         }
+
+        return String(describing: content)
     }
 
     private func extractArray(array: [Any]) -> String {
-        let content = [String: String]()
+        var content = [String: String]()
 
         for (index, value) in array.enumerated() {
             content[String(index)] = {
                 switch value {
                     case let entity as Entity:
-                        entity
+                        return extractSelf(self: entity)
                     default:
-                        return unwrap(any: valuei)
+                        return String(describing: unwrap(any: value))
                 }
-            }
+            }()
         }
+
+        return String(describing: content)
     }
 }
