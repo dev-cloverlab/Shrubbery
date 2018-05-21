@@ -7,12 +7,12 @@ use_frameworks!
 target 'Shrubbery' do
   pod 'Alamofire', '~> 4.7.2'
   pod 'RxAlamofire'
-  pod 'ObjectMapper', '~> 3.1'
-
+  pod "RxCoreData", "~> 0.4.0"
   pod 'RxSwift', '~> 4.1.2'
   pod 'RxCocoa', '~> 4.1.2'
 
   pod 'SwiftyJSON', '~> 4.1.0'
+  pod 'ObjectMapper', '~> 3.1'
 
   pod 'SwiftyBeaver'
 
