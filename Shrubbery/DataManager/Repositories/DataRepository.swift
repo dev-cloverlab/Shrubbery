@@ -18,6 +18,6 @@ class DataRepository: DataStore {
     }
 
     func fetchFakeList() -> Single<FakeEntity> {
-        return remote.fetchFakeList()
+        return local.fetchFakeList()
     }
 }

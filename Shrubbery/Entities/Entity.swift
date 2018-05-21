@@ -16,7 +16,9 @@ extension Entity {
             .replacingOccurrences(of: "\\", with: "")
             .replacingOccurrences(of: "\"", with: ""))
     }
+}
 
+extension Entity {
     /**
      Extract the Entity self's all variables information to a string.
 

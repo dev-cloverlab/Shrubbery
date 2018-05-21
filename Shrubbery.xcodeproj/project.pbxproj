@@ -20,6 +20,7 @@
 		6070020BF394B4D0C285881A /* RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004EDC14609D3FCE000F8 /* RemoteService.swift */; };
 		607003173AD4A19D3FF31116 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607003C6FDB1A5F53C57F1A5 /* Interactor.swift */; };
 		607003A73697795B78EDD9B5 /* RemoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700168086EF555BCC26217 /* RemoteDataStore.swift */; };
+		607003D2915492E6B6EB5367 /* InformationEntity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607008E1C1834AA9CFDF26C8 /* InformationEntity+Ext.swift */; };
 		60700428E1C710071ABDD23C /* ShrubberyServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700251E09EAD674B767362 /* ShrubberyServiceConfig.swift */; };
 		607004AB7BA6B0233D0D5BDC /* ShrubberyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607000D67BA7F60711541077 /* ShrubberyService.swift */; };
 		607006F9D2AFF3F46517658E /* LocalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070042716E57298E63D3768 /* LocalDataStore.swift */; };
@@ -30,12 +31,13 @@
 		60700AFE519EE1949BD35D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60700613F24FAFF9E2FA694C /* Assets.xcassets */; };
 		60700B79FAF114E3A533FCC1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700B528755C1C863EFAAAB /* View.swift */; };
 		60700CF6D367C6FFF7220595 /* MainPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700A4751310FB333C48463 /* MainPresenterInput.swift */; };
-		60700D0E0D31D1821AE26188 /* FakeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F551DF3F75C63DAD9CD /* FakeEntity.swift */; };
+		60700D0E0D31D1821AE26188 /* FakeEntity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F551DF3F75C63DAD9CD /* FakeEntity+Ext.swift */; };
 		60700E3E12577891180901CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6070043634FBDBA75C6D84F2 /* LaunchScreen.storyboard */; };
 		60700ED6D43490B6AF61EF95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60700B6AC725B0A0A31874AD /* Main.storyboard */; };
 		60700F2A4D066867635B92EB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700442E4382BF75D44E923 /* Router.swift */; };
 		60700FDD11189C73C18E68F0 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007F5D53A13DFB20FF58F /* Presenter.swift */; };
 		60700FDE472E16559667FAA6 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607000315B65E625E1FE2DED /* Entity.swift */; };
+		9452B5A220B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9452B5A020B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodeld */; };
 		94EC700F20AAE785002A277E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC700E20AAE785002A277E /* MainViewController.swift */; };
 		954A87D53B2247AEEC6C0CCC /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F9ED70CE617E552865876 /* MainConfigurator.swift */; };
 		AFFA748641539BA8E17525CC /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82414F08BAEC0034F65A4047 /* MainPresenter.swift */; };
@@ -61,6 +63,7 @@
 		60700613F24FAFF9E2FA694C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607007F5D53A13DFB20FF58F /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		607008E1C1834AA9CFDF26C8 /* InformationEntity+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InformationEntity+Ext.swift"; sourceTree = "<group>"; };
 		60700907EE7EF22CF4E9EB2F /* LocalCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCoreData.swift; sourceTree = "<group>"; };
 		6070093E6AF13B40DD5CCFE2 /* ShrubberyCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrubberyCoreData.swift; sourceTree = "<group>"; };
 		60700A4751310FB333C48463 /* MainPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenterInput.swift; sourceTree = "<group>"; };
@@ -70,11 +73,12 @@
 		60700D9049AC9922802CEDC5 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		60700E0B354BCD788E706105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60700ED82CC96C33D5846C39 /* RxSwift+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxSwift+ObjectMapper.swift"; sourceTree = "<group>"; };
-		60700F551DF3F75C63DAD9CD /* FakeEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeEntity.swift; sourceTree = "<group>"; };
+		60700F551DF3F75C63DAD9CD /* FakeEntity+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FakeEntity+Ext.swift"; sourceTree = "<group>"; };
 		60700F983957E4F3B424077A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		65D811776866E895D5A5F1B5 /* MainRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouterInput.swift; sourceTree = "<group>"; };
 		783A0880B3DF42B3F8A78C19 /* MainRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		82414F08BAEC0034F65A4047 /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		9452B5A120B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreData+Shrubbery.xcdatamodel"; sourceTree = "<group>"; };
 		945C1D9720AA8CE700BBC574 /* Pods_Shrubbery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Shrubbery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D9353320AA753300520CDF /* Shrubbery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shrubbery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EC700E20AAE785002A277E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -275,6 +279,14 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		60700A17C76A32225117AF4F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9452B5A020B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		60700B407891825CBE730D9E /* HttpRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,8 +307,9 @@
 		60700D517AC2A15B1B38A076 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				60700F551DF3F75C63DAD9CD /* FakeEntity.swift */,
+				60700F551DF3F75C63DAD9CD /* FakeEntity+Ext.swift */,
 				607000315B65E625E1FE2DED /* Entity.swift */,
+				607008E1C1834AA9CFDF26C8 /* InformationEntity+Ext.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -306,6 +319,7 @@
 			children = (
 				60700907EE7EF22CF4E9EB2F /* LocalCoreData.swift */,
 				6070093E6AF13B40DD5CCFE2 /* ShrubberyCoreData.swift */,
+				60700A17C76A32225117AF4F /* CoreData */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -506,6 +520,7 @@
 				607009C19C9F630CC9A6423D /* ObjectExt.swift in Sources */,
 				FD1E79476EDB821BA0E3DDEC /* MainViewInput.swift in Sources */,
 				94EC700F20AAE785002A277E /* MainViewController.swift in Sources */,
+				9452B5A220B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodeld in Sources */,
 				AFFA748641539BA8E17525CC /* MainPresenter.swift in Sources */,
 				0DFD7D94E21344D8ED2F2A0B /* MainInteractorInput.swift in Sources */,
 				DB0AFAB6EF029C6DAA11C590 /* MainInteractor.swift in Sources */,
@@ -524,13 +539,14 @@
 				607001362AD33A4B5DD4A25C /* DataRepository.swift in Sources */,
 				60700160CB5EB8DF7496C9B9 /* LocalCoreData.swift in Sources */,
 				6070020BF394B4D0C285881A /* RemoteService.swift in Sources */,
-				60700D0E0D31D1821AE26188 /* FakeEntity.swift in Sources */,
+				60700D0E0D31D1821AE26188 /* FakeEntity+Ext.swift in Sources */,
 				60700FDE472E16559667FAA6 /* Entity.swift in Sources */,
 				607004AB7BA6B0233D0D5BDC /* ShrubberyService.swift in Sources */,
 				607001FC122EAD6ECDB5E5BE /* ShrubberyCoreData.swift in Sources */,
 				60700428E1C710071ABDD23C /* ShrubberyServiceConfig.swift in Sources */,
 				6070077479A8FD8E542CB26C /* RxSwift+ObjectMapper.swift in Sources */,
 				607002043FD298F2DD615F03 /* RestHttpRequest.swift in Sources */,
+				607003D2915492E6B6EB5367 /* InformationEntity+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,7 +688,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U9W4S92WSP;
 				INFOPLIST_FILE = shrubbery/supportedfiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloverlab.shrubbery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -688,7 +704,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U9W4S92WSP;
 				INFOPLIST_FILE = shrubbery/supportedfiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cloverlab.shrubbery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -719,6 +735,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9452B5A020B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9452B5A120B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodel */,
+			);
+			currentVersion = 9452B5A120B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodel */;
+			path = "CoreData+Shrubbery.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 60700E5A2C80310458269A57 /* Project object */;
 }

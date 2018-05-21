@@ -16,6 +16,6 @@ class LocalDataStore: DataStore {
     }
 
     func fetchFakeList() -> Single<FakeEntity> {
-        fatalError("fetchWatchList() has not been implemented")
+        return localCoreData.retrieveFakeList()
     }
 }
