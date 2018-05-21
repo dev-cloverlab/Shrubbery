@@ -17,6 +17,14 @@ extension Entity {
             .replacingOccurrences(of: "\"", with: ""))
     }
 
+    /**
+     Extract the Entity self's all variables information to a string.
+
+     - parameters:
+        - entity: Entity self.
+     
+     - returns: The information of Entity's all variables.
+    */
     private func extractSelfToString(self entity: Entity) -> String {
         let mirror = Mirror(reflecting: entity)
         var content = [String: String]()
@@ -37,12 +45,16 @@ extension Entity {
         return String(describing: content)
     }
 
+    /**
+     Extract the array variables information recursively.
+    */
     private func extractArrayToString(array: [Any]) -> String {
         var content = [String: String]()
 
         for (index, value) in array.enumerated() {
             content[String(index)] = {
                 switch value {
+                    // Recursive extract the variable information in to a string.
                     case let entity as Entity:
                         return extractSelfToString(self: entity)
                     default:
