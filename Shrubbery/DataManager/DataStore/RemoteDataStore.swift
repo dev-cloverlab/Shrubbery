@@ -18,4 +18,8 @@ class RemoteDataStore: DataStore {
     func fetchFakeList() -> Single<FakeEntity> {
         return service.retrieveFakeList()
     }
+
+    func writeInformation(info entity: InformationEntity) -> Completable {
+        fatalError("writeInformation(info:) has not been implemented")
+    }
 }

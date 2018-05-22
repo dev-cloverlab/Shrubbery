@@ -16,6 +16,7 @@ extension FakeEntity: Entity {
     static let INFOS = "infos"
 }
 
+// MARK: Object Mapper
 extension FakeEntity: Mappable {
     init?(map: Map) {
     }

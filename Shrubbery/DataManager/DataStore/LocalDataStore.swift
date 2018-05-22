@@ -10,12 +10,18 @@ import RxSwift
 
 class LocalDataStore: DataStore {
     var localCoreData: LocalDataService!
+    var localRealm: LocalDataService!
 
-    init(coredata local: LocalDataService) {
+    init(coredata local: LocalDataService, realm: LocalDataService) {
         localCoreData = local
+        localRealm = realm
     }
 
     func fetchFakeList() -> Single<FakeEntity> {
-        return localCoreData.retrieveFakeList()
+        return localRealm.retrieveFakeList()
+    }
+
+    func writeInformation(info entity: InformationEntity) -> Completable {
+        return localRealm.updateInformation(info: entity)
     }
 }

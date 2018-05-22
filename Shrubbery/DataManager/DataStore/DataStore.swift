@@ -10,4 +10,6 @@ import RxSwift
 
 protocol DataStore {
     func fetchFakeList() -> Single<FakeEntity>
+
+    func writeInformation(info entity: InformationEntity) -> Completable
 }

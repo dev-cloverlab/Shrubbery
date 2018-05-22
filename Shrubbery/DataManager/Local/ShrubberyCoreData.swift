@@ -30,10 +30,10 @@ class ShrubberyCoreData: LocalDataService {
             .asSingle()  // FIXME: (jieyi 2018/05/22) There're some issues from RxCoreData can't transform to Single.
     }
 
-    func updateInformation(info: InformationEntity) -> Completable {
+    func updateInformation(info entity: InformationEntity) -> Completable {
         return Completable.create { completable in
             do {
-                try self.coreDataContext.rx.update(info)
+                try self.coreDataContext.rx.update(entity)
                 completable(.completed)
             }
             catch {

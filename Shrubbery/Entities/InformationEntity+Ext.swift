@@ -6,9 +6,10 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import ObjectMapper
-import RxCoreData
 import CoreData
+import RxCoreData
+import RealmSwift
+import ObjectMapper
 
 struct InformationEntity {
     var id: Int?
@@ -24,6 +25,7 @@ extension INFO: Entity {
     static let UPDATE_DATE = "updated_at"
 }
 
+// MARK: Object Mapper
 extension INFO: Mappable {
     init?(map: Map) {
     }
@@ -35,6 +37,7 @@ extension INFO: Mappable {
     }
 }
 
+// MARK: Core Data
 extension INFO: Persistable {
     static var entityName = "Fake"
     static var primaryAttributeName = INFO.ID

@@ -28,5 +28,14 @@ class MainPresenter: MainPresenterInput {
                 }
             }
             .disposed(by: view.disposable)
+
+//        interactor.saveInformationEntity(info: INFO()).subscribe { completable in
+//            switch completable {
+//                case .completed:
+//                    logw("Goooooood")
+//                case .error(let error):
+//                    loge(error)
+//            }
+//        }
     }
 }

@@ -11,5 +11,5 @@ import RxSwift
 protocol LocalDataService {
     func retrieveFakeList() -> Single<FakeEntity>
 
-    func updateInformation(info: InformationEntity) -> Completable
+    func updateInformation(info entity: InformationEntity) -> Completable
 }

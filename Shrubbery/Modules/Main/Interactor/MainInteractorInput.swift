@@ -11,4 +11,6 @@ import RxSwift
 
 protocol MainInteractorInput: Interactor {
     func getFakeList() -> Single<FakeEntity>
+
+    func saveInformationEntity(info entity: InformationEntity) -> Completable
 }

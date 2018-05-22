@@ -21,8 +21,8 @@ target 'Shrubbery' do
 
   # For Data Storage
   pod 'Realm', '~> 3.5.0'
+  pod 'RealmSwift', '~> 3.5.0'
   pod 'RxCoreData', '~> 0.4.0'
-  pod 'RxRealm', '~> 0.7.5'
 
   # For Image
   pod 'RxKingfisher', '~> 0.1.1'
