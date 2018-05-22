@@ -43,4 +43,8 @@ class ShrubberyCoreData: LocalDataService {
             return Disposables.create()
         }
     }
+
+    func removeInformation(info entity: InformationEntity? = nil) -> Completable {
+        fatalError("removeInformation(entity:) has not been implemented")
+    }
 }
