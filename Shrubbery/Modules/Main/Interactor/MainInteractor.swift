@@ -16,10 +16,10 @@ class MainInteractor: MainInteractorInput {
     }
 
     func getFakeList() -> Single<FakeEntity> {
-        return repository.fetchFakeList()
+        return repository.fetchFakeList().thruInternet()
     }
 
     func saveInformationEntity(info entity: InformationEntity) -> Completable {
-        return repository.writeInformation(info: entity)
+        return repository.writeInformation(info: entity).thruInternet()
     }
 }

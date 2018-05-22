@@ -19,7 +19,7 @@ class MainPresenter: MainPresenterInput {
     func getList() {
         interactor
             .getFakeList()
-            .subscribe { single in
+            .subscribe { [weak self] single in
                 switch single {
                     case .success(let entity):
                         entity.toShowAll()
@@ -28,14 +28,5 @@ class MainPresenter: MainPresenterInput {
                 }
             }
             .disposed(by: view.disposable)
-
-//        interactor.saveInformationEntity(info: INFO()).subscribe { completable in
-//            switch completable {
-//                case .completed:
-//                    logw("Goooooood")
-//                case .error(let error):
-//                    loge(error)
-//            }
-//        }
     }
 }
