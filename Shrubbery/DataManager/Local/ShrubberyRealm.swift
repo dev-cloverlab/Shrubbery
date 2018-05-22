@@ -8,7 +8,6 @@
 
 import RealmSwift
 import RxSwift
-import RxRealm
 
 class ShrubberyRealm: LocalDataService {
     let realm = try! Realm()
