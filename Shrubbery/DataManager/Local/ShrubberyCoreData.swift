@@ -11,7 +11,7 @@ import RxSwift
 import RxCoreData
 import ObjectMapper
 
-class ShrubberyCoreData: LocalCoreData {
+class ShrubberyCoreData: LocalDataService {
     @available(iOS 10.0, *)
     lazy var coreDataContext: NSManagedObjectContext! = {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate

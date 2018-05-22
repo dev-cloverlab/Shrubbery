@@ -8,7 +8,7 @@
 
 import RxSwift
 
-protocol LocalCoreData {
+protocol LocalDataService {
     func retrieveFakeList() -> Single<FakeEntity>
 
     func updateInformation(info: InformationEntity) -> Completable

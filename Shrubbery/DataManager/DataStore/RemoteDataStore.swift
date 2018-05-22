@@ -9,9 +9,9 @@
 import RxSwift
 
 class RemoteDataStore: DataStore {
-    var service: RemoteService!
+    var service: RemoteDataService!
 
-    init(remote service: RemoteService) {
+    init(remote service: RemoteDataService) {
         self.service = service
     }
 

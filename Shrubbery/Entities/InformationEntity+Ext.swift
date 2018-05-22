@@ -39,7 +39,7 @@ extension INFO: Persistable {
     static var entityName = "Fake"
     static var primaryAttributeName = INFO.ID
     public var identity: String {
-        return "this is cool"
+        return "shrubbery"
     }
 
     public init(entity: NSManagedObject) {

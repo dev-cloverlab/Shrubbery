@@ -8,6 +8,6 @@
 
 import RxSwift
 
-protocol RemoteService {
+protocol RemoteDataService {
     func retrieveFakeList() -> Single<FakeEntity>
 }

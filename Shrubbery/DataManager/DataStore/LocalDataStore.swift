@@ -9,9 +9,9 @@
 import RxSwift
 
 class LocalDataStore: DataStore {
-    var localCoreData: LocalCoreData!
+    var localCoreData: LocalDataService!
 
-    init(coredata local: LocalCoreData) {
+    init(coredata local: LocalDataService) {
         localCoreData = local
     }
 
