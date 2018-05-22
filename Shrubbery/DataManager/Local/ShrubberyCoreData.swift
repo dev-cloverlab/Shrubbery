@@ -31,13 +31,13 @@ class ShrubberyCoreData: LocalDataService {
     }
 
     func updateInformation(info entity: InformationEntity) -> Completable {
-        return Completable.create { completable in
+        return Completable.create {
             do {
                 try self.coreDataContext.rx.update(entity)
-                completable(.completed)
+                $0(.completed)
             }
             catch {
-                completable(.error(error))
+                $0(.error(error))
             }
 
             return Disposables.create()
@@ -45,6 +45,21 @@ class ShrubberyCoreData: LocalDataService {
     }
 
     func removeInformation(info entity: InformationEntity? = nil) -> Completable {
-        fatalError("removeInformation(entity:) has not been implemented")
+        return Completable.create {
+            do {
+                if let e = entity {
+                    try self.coreDataContext.rx.delete(e)
+                    $0(.completed)
+                }
+                else {
+                    $0(.error(RxError.noElements))
+                }
+            }
+            catch {
+                $0(.error(error))
+            }
+
+            return Disposables.create()
+        }
     }
 }

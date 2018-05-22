@@ -42,6 +42,7 @@ class ShrubberyRealm: LocalDataService {
     func removeInformation(info entity: InformationEntity? = nil) -> Completable {
         return Completable.create {
             do {
+                // OPTIMIZE: (jieyi 2018/05/22) We can create a good add rx completable method.
                 self.realm.delete(TempObj())
                 $0(.completed)
             }
