@@ -13,6 +13,8 @@ target 'Shrubbery' do
   pod 'Alamofire', '~> 4.7.2'
   pod 'RxAlamofire', '~> 4.2.0'
   pod 'ObjectMapper', '~> 3.1'
+  pod 'Moya/RxSwift', '~> 11.0.2'
+  # pod 'Moya-ObjectMapper/RxSwift'
 
   # For Json
   pod 'SwiftyJSON', '~> 4.1.0'
@@ -23,7 +25,7 @@ target 'Shrubbery' do
   pod 'RxRealm', '~> 0.7.5'
 
   # For Image
-  pod 'RxKingfisher', '~> 0.1'
+  pod 'RxKingfisher', '~> 0.1.1'
   pod 'Kingfisher', '~> 4.8.0'
 
   # For Logging
