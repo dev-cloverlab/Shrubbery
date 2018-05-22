@@ -18,7 +18,7 @@ class RemoteDataStore: DataStore {
     }
 
     func fetchFakeList() -> Single<FakeEntity> {
-        return v1Service.retrieveFakeList()
+        return v2Service.retrieveFakeList()
     }
 
     func writeInformation(info entity: InformationEntity) -> Completable {

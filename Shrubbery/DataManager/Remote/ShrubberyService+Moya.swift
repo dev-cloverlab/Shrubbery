@@ -13,11 +13,10 @@ class ShrubberyMoyaService: RestHttpRequest, RemoteDataService {
     let provider = MoyaProvider<ShrubberyMoyaConfig>().rx
 
     func retrieveFakeList() -> RxSwift.Single<FakeEntity> {
-        return provider
-            .request(.retrieveFakeList)
-            .asObservable()
-            .mapString()
-            .mapToObject(type: FakeEntity.self)
-            .asSingle()
+        var request = provider.request(.retrieveFakeList)
+#if DEBUG
+        request = request.debug()
+#endif
+        return request.mapString().mapToObject(FakeEntity.self)
     }
 }
