@@ -12,6 +12,7 @@ import RxCocoa
 
 class MainViewController: UIViewController, MainViewInput {
     var presenter: MainPresenterInput!
+    var disposable = DisposeBag()
 
     // MARK: Life cycle
     override func viewDidLoad() {

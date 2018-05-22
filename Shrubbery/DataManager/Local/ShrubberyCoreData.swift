@@ -18,20 +18,29 @@ class ShrubberyCoreData: LocalCoreData {
         return appDelegate.persistentContainer.viewContext
     }()
 
-    @available(iOS 10.0, *)
     func retrieveFakeList() -> Single<FakeEntity> {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Fake")
-        do {
-            try coreDataContext.rx.update(InformationEntity(id: 32, title: "vvvvvvvvvvvv", updatedAt: Date()))
-        }
-        catch {
-        }
+        return coreDataContext.rx
+            .entities(InformationEntity.self,
+                      sortDescriptors: [NSSortDescriptor(key: INFO.UPDATE_DATE, ascending: false)])
+            .map { list -> FakeEntity in
+                var entity = FakeEntity()
+                entity.infoList = list
+                return entity
+            }
+            .asSingle()  // FIXME: (jieyi 2018/05/22) There're some issues from RxCoreData can't transform to Single.
+    }
 
-        coreDataContext.rx.entities(InformationEntity.self, sortDescriptors: [NSSortDescriptor(key: "updated_at", ascending: false)])
-            .subscribe { event in
-                logw(event)
+    func updateInformation(info: InformationEntity) -> Completable {
+        return Completable.create { completable in
+            do {
+                try self.coreDataContext.rx.update(info)
+                completable(.completed)
+            }
+            catch {
+                completable(.error(error))
             }
 
-        return Single.just(FakeEntity(map: Map(mappingType: .toJSON, JSON: ["123": "123"]))!, scheduler: MainScheduler())
+            return Disposables.create()
+        }
     }
 }

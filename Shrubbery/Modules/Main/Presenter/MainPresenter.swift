@@ -17,13 +17,16 @@ class MainPresenter: MainPresenterInput {
     }
 
     func getList() {
-        interactor.getFakeList().subscribe { single in
-            switch single {
-                case .success(let entity):
-                    entity.toShowAll()
-                case .error(let error):
-                    loge(error)
+        interactor
+            .getFakeList()
+            .subscribe { single in
+                switch single {
+                    case .success(let entity):
+                        entity.toShowAll()
+                    case .error(let error):
+                        loge(error)
+                }
             }
-        }
+            .disposed(by: view.disposable)
     }
 }

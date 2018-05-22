@@ -5,10 +5,14 @@
 //  Created by Jieyi on 15/05/2018.
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
+
+import RxSwift
+
 protocol MainViewInput: View {
+    var disposable: DisposeBag { get }
+
     /**
-        @author Jieyi
-        Setup initial state of the view
+     Setup initial state of the view
     */
     func setupInitialState()
 }

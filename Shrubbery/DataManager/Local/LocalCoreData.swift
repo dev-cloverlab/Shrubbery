@@ -10,4 +10,6 @@ import RxSwift
 
 protocol LocalCoreData {
     func retrieveFakeList() -> Single<FakeEntity>
+
+    func updateInformation(info: InformationEntity) -> Completable
 }

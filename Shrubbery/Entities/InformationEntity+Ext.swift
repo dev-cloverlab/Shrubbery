@@ -10,21 +10,21 @@ import ObjectMapper
 import RxCoreData
 import CoreData
 
-typealias INFO = InformationEntity
-
 struct InformationEntity {
     var id: Int?
     var title: String?
     var updatedAt: Date?
 }
 
-extension InformationEntity: Entity {
+typealias INFO = InformationEntity
+
+extension INFO: Entity {
     static let ID = "id"
     static let TITLE = "title"
     static let UPDATE_DATE = "updated_at"
 }
 
-extension InformationEntity: Mappable {
+extension INFO: Mappable {
     init?(map: Map) {
     }
 
@@ -35,7 +35,7 @@ extension InformationEntity: Mappable {
     }
 }
 
-extension InformationEntity: Persistable {
+extension INFO: Persistable {
     static var entityName = "Fake"
     static var primaryAttributeName = INFO.ID
     public var identity: String {
