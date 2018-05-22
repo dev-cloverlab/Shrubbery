@@ -9,14 +9,16 @@
 import RxSwift
 
 class RemoteDataStore: DataStore {
-    var service: RemoteDataService!
+    var v1Service: RemoteDataService!
+    var v2Service: RemoteDataService!
 
-    init(remote service: RemoteDataService) {
-        self.service = service
+    init(alamofire remote1: RemoteDataService, moya remote2: RemoteDataService) {
+        self.v1Service = remote1
+        self.v2Service = remote2
     }
 
     func fetchFakeList() -> Single<FakeEntity> {
-        return service.retrieveFakeList()
+        return v1Service.retrieveFakeList()
     }
 
     func writeInformation(info entity: InformationEntity) -> Completable {

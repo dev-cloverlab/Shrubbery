@@ -17,11 +17,12 @@ class MainModuleConfigurator {
 
     private func configure(viewController: MainViewController) {
         // MARK: Data Manager
-        let local = ShrubberyCoreData()
-        let coredata = ShrubberyService()
+        let coredata = ShrubberyCoreData()
         let realm = ShrubberyRealm()
-        let repository = DataRepository(local: LocalDataStore(coredata: local, realm: realm),
-                                        remote: RemoteDataStore(remote: coredata))
+        let alamofireRemote = ShrubberyAlamofireService()
+        let moyaRemote = ShrubberyMoyaService()
+        let repository = DataRepository(local: LocalDataStore(coredata: coredata, realm: realm),
+                                        remote: RemoteDataStore(alamofire: alamofireRemote, moya: moyaRemote))
 
         let interactor = MainInteractor(repository: repository)
         let router = MainRouter()

@@ -18,7 +18,7 @@ class DataRepository: DataStore {
     }
 
     func fetchFakeList() -> Single<FakeEntity> {
-        return local.fetchFakeList()
+        return remote.fetchFakeList()
     }
 
     func writeInformation(info entity: InformationEntity) -> Completable {
