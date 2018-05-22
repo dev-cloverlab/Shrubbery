@@ -13,6 +13,7 @@ struct FakeEntity {
 }
 
 extension FakeEntity: Entity {
+    static let INFOS = "infos"
 }
 
 extension FakeEntity: Mappable {
@@ -20,6 +21,6 @@ extension FakeEntity: Mappable {
     }
 
     mutating func mapping(map: Map) {
-        infoList <- map["infos"]
+        infoList <- map[FakeEntity.INFOS]
     }
 }

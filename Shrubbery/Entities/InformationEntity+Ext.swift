@@ -10,6 +10,8 @@ import ObjectMapper
 import RxCoreData
 import CoreData
 
+typealias INFO = InformationEntity
+
 struct InformationEntity {
     var id: Int?
     var title: String?
@@ -17,6 +19,9 @@ struct InformationEntity {
 }
 
 extension InformationEntity: Entity {
+    static let ID = "id"
+    static let TITLE = "title"
+    static let UPDATE_DATE = "updated_at"
 }
 
 extension InformationEntity: Mappable {
@@ -24,41 +29,35 @@ extension InformationEntity: Mappable {
     }
 
     mutating func mapping(map: Map) {
-        id <- map["id"]
-        title <- map["title"]
-        updatedAt <- (map["updated_at"], DateTransform())
+        id <- map[INFO.ID]
+        title <- map[INFO.TITLE]
+        updatedAt <- (map[INFO.UPDATE_DATE], DateTransform())
     }
 }
 
 extension InformationEntity: Persistable {
-    typealias T = NSManagedObject
-
-    static var entityName: String {
-        return "Fake"
-    }
-    static var primaryAttributeName: String {
-        return "id"
-    }
+    static var entityName = "Fake"
+    static var primaryAttributeName = INFO.ID
     public var identity: String {
         return "this is cool"
     }
 
-    public init(entity: T) {
-        id = entity.value(forKey: "id") as! Int
-        title = entity.value(forKey: "title") as! String
-        updatedAt = entity.value(forKey: "updated_at") as! Date
+    public init(entity: NSManagedObject) {
+        id = entity.value(forKey: INFO.ID) as! Int
+        title = entity.value(forKey: INFO.TITLE) as! String
+        updatedAt = entity.value(forKey: INFO.UPDATE_DATE) as! Date
     }
 
-    public func update(_ entity: T) {
-        entity.setValue(id, forKey: "id")
-        entity.setValue(title, forKey: "title")
-        entity.setValue(updatedAt, forKey: "updated_at")
+    public func update(_ entity: NSManagedObject) {
+        entity.setValue(id, forKey: INFO.ID)
+        entity.setValue(title, forKey: INFO.TITLE)
+        entity.setValue(updatedAt, forKey: INFO.UPDATE_DATE)
 
         do {
             try entity.managedObjectContext?.save()
         }
-        catch let e {
-            loge(e)
+        catch {
+            loge(error)
         }
     }
 }
