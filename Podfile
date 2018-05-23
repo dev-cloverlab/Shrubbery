@@ -32,7 +32,7 @@ target 'Shrubbery' do
   pod 'SwiftyBeaver'
 
   # For Dependency Injection
-  pod 'Swinject'
+  pod 'Swinject', '~> 2.4.0'
 
   #  target 'ShrubberyTests' do
   #    inherit! :search_paths

@@ -10,8 +10,12 @@ import RealmSwift
 import RxSwift
 
 class ShrubberyRealm: LocalDataService {
-    let realm = try! Realm()
-    lazy var realmPath = realm.configuration.fileURL!
+    private var realm: Realm
+    private lazy var realmPath = realm.configuration.fileURL!
+
+    init(_ realm: Realm) {
+        self.realm = realm
+    }
 
     func retrieveFakeList() -> Single<FakeEntity> {
         // FIXME: (jieyi 2018/05/22) Fix the object inheritance.

@@ -10,7 +10,7 @@ import RxSwift
 import ObjectMapper
 
 extension ObservableType where E == String {
-    public func mapToObject<M: Mappable>(_ type: M.Type) -> Observable<M> {
+    func mapToObject<M: Mappable>(_ type: M.Type) -> Observable<M> {
         return flatMap { strData -> Observable<M> in
             guard let obj = Mapper<M>().map(JSONString: strData) else {
                 throw RxError.noElements
@@ -22,7 +22,7 @@ extension ObservableType where E == String {
 }
 
 extension PrimitiveSequence where TraitType == SingleTrait, Element == String {
-    public func mapToObject<M: Mappable>(_ type: M.Type) -> Single<M> {
+    func mapToObject<M: Mappable>(_ type: M.Type) -> Single<M> {
         return flatMap { strData -> Single<M> in
             guard let obj = Mapper<M>().map(JSONString: strData) else {
                 throw RxError.noElements

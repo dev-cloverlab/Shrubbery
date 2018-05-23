@@ -16,10 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Core Data stack upon iOS 10
     @available(iOS 10.0, *)
     lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "CoreData+Shrubbery")
+        let container = NSPersistentContainer(name: ShrubberyCoreDataConstants.coredataName)
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error {
-
                 fatalError("Unresolved error, \((error as NSError).userInfo)")
             }
         })

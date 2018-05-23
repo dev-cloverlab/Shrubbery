@@ -9,8 +9,8 @@
 import RxSwift
 
 class RemoteDataStore: DataStore {
-    var v1Service: RemoteDataService!
-    var v2Service: RemoteDataService!
+    private var v1Service: RemoteDataService!
+    private var v2Service: RemoteDataService!
 
     init(alamofire remote1: RemoteDataService, moya remote2: RemoteDataService) {
         self.v1Service = remote1

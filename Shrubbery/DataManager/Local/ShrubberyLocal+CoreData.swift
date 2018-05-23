@@ -13,7 +13,7 @@ import ObjectMapper
 
 class ShrubberyCoreData: LocalDataService {
     @available(iOS 10.0, *)
-    lazy var coreDataContext: NSManagedObjectContext! = {
+    private lazy var coreDataContext: NSManagedObjectContext! = {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate.persistentContainer.viewContext
     }()
@@ -67,4 +67,8 @@ class ShrubberyCoreData: LocalDataService {
             return Disposables.create()
         }
     }
+}
+
+struct ShrubberyCoreDataConstants {
+    static let coredataName = "CoreData+Shrubbery"
 }

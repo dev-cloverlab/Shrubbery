@@ -9,8 +9,8 @@
 import RxSwift
 
 class DataRepository: DataStore {
-    var local: DataStore!
-    var remote: DataStore!
+    private var local: DataStore!
+    private var remote: DataStore!
 
     init(local localStore: DataStore, remote remoteStore: DataStore) {
         local = localStore

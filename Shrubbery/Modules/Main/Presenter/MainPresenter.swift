@@ -19,7 +19,7 @@ class MainPresenter: MainPresenterInput {
     func getList() {
         interactor
             .getFakeList()
-            .subscribe { [weak self] single in
+            .subscribe { single in
                 switch single {
                     case .success(let entity):
                         entity.toShowAll()

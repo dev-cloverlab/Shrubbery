@@ -9,6 +9,7 @@
 import RxSwift
 
 protocol Interactable: class {
+    var repository: DataStore! { get set }
 }
 
 extension ObservableType {
