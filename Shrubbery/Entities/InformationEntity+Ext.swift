@@ -17,44 +17,44 @@ struct InformationEntity {
     var updatedAt: Date?
 }
 
-typealias INFO = InformationEntity
+typealias Info = InformationEntity
 
-extension INFO: Entity {
-    static let ID = "id"
-    static let TITLE = "title"
-    static let UPDATE_DATE = "updated_at"
+extension Info: Entity {
+    static let entityId = "id"
+    static let entityTitle = "title"
+    static let updatedDate = "updated_at"
 }
 
 // MARK: Object Mapper
-extension INFO: Mappable {
+extension Info: Mappable {
     init?(map: Map) {
     }
 
     mutating func mapping(map: Map) {
-        id <- map[INFO.ID]
-        title <- map[INFO.TITLE]
-        updatedAt <- (map[INFO.UPDATE_DATE], DateTransform())
+        id <- map[Info.entityName]
+        title <- map[Info.entityTitle]
+        updatedAt <- (map[Info.updatedDate], DateTransform())
     }
 }
 
 // MARK: Core Data
-extension INFO: Persistable {
+extension Info: Persistable {
     static var entityName = "Fake"
-    static var primaryAttributeName = INFO.ID
+    static var primaryAttributeName = Info.entityId
     public var identity: String {
         return "shrubbery"
     }
 
     public init(entity: NSManagedObject) {
-        id = entity.value(forKey: INFO.ID) as! Int
-        title = entity.value(forKey: INFO.TITLE) as! String
-        updatedAt = entity.value(forKey: INFO.UPDATE_DATE) as! Date
+        id = entity.value(forKey: Info.entityId) as! Int
+        title = entity.value(forKey: Info.entityTitle) as! String
+        updatedAt = entity.value(forKey: Info.updatedDate) as! Date
     }
 
     public func update(_ entity: NSManagedObject) {
-        entity.setValue(id, forKey: INFO.ID)
-        entity.setValue(title, forKey: INFO.TITLE)
-        entity.setValue(updatedAt, forKey: INFO.UPDATE_DATE)
+        entity.setValue(id, forKey: Info.entityId)
+        entity.setValue(title, forKey: Info.entityTitle)
+        entity.setValue(updatedAt, forKey: Info.updatedDate)
 
         do {
             try entity.managedObjectContext?.save()

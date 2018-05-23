@@ -21,7 +21,7 @@ class ShrubberyRealm: LocalDataService {
             }
     }
 
-    func updateInformation(info entity: InformationEntity) -> Completable {
+    func update(info entity: Info) -> Completable {
         // OPTIMIZE: (jieyi 2018/05/22) We can create a good add rx completable method.
         return Completable.create {
             do {
@@ -39,7 +39,7 @@ class ShrubberyRealm: LocalDataService {
         }
     }
 
-    func removeInformation(info entity: InformationEntity? = nil) -> Completable {
+    func remove(info entity: Info? = nil) -> Completable {
         return Completable.create {
             do {
                 // OPTIMIZE: (jieyi 2018/05/22) We can create a good add rx completable method.

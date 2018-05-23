@@ -26,6 +26,7 @@
 		6070068D25DC0B63EB98862B /* ShrubberyLocal+Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070040A3276692577E6F491 /* ShrubberyLocal+Realm.swift */; };
 		607006F9D2AFF3F46517658E /* LocalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070042716E57298E63D3768 /* LocalDataStore.swift */; };
 		6070077479A8FD8E542CB26C /* ObjectMapper+RxExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700ED82CC96C33D5846C39 /* ObjectMapper+RxExt.swift */; };
+		607007CC518424D0DB8C5D8A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070095A1491AD36950E24C4 /* Constants.swift */; };
 		60700859C58E3B446E76E2B9 /* ShrubberyConfig+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700009F50682B7E50AA373 /* ShrubberyConfig+Moya.swift */; };
 		607008A60377FEB21A05DCC0 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700D9049AC9922802CEDC5 /* DataStore.swift */; };
 		6070090E3AA1C66CB0F002AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */; };
@@ -71,6 +72,7 @@
 		607008E1C1834AA9CFDF26C8 /* InformationEntity+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InformationEntity+Ext.swift"; sourceTree = "<group>"; };
 		60700907EE7EF22CF4E9EB2F /* LocalDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataService.swift; sourceTree = "<group>"; };
 		6070093E6AF13B40DD5CCFE2 /* ShrubberyLocal+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyLocal+CoreData.swift"; sourceTree = "<group>"; };
+		6070095A1491AD36950E24C4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		607009AC301A5B419E37D9AE /* ShrubberyService+Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyService+Moya.swift"; sourceTree = "<group>"; };
 		60700A4751310FB333C48463 /* MainPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenterInput.swift; sourceTree = "<group>"; };
 		60700B528755C1C863EFAAAB /* Viewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
@@ -278,10 +280,19 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		60700963E4C4E7309CBE8CB0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6070095A1491AD36950E24C4 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		607009A525628B5E69A428EB /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				607001D9A3B62C695BA56E0C /* Utils */,
+				60700963E4C4E7309CBE8CB0 /* Constants */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -569,6 +580,7 @@
 				6070068D25DC0B63EB98862B /* ShrubberyLocal+Realm.swift in Sources */,
 				60700859C58E3B446E76E2B9 /* ShrubberyConfig+Moya.swift in Sources */,
 				60700CAD4DA5D410BE60578A /* ShrubberyService+Moya.swift in Sources */,
+				607007CC518424D0DB8C5D8A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

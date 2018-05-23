@@ -21,7 +21,7 @@ class ShrubberyCoreData: LocalDataService {
     func retrieveFakeList() -> Single<FakeEntity> {
         return coreDataContext.rx
             .entities(InformationEntity.self,
-                      sortDescriptors: [NSSortDescriptor(key: INFO.UPDATE_DATE, ascending: false)])
+                      sortDescriptors: [NSSortDescriptor(key: Info.updatedDate, ascending: false)])
             .map { list -> FakeEntity in
                 var entity = FakeEntity()
                 entity.infoList = list
@@ -30,33 +30,40 @@ class ShrubberyCoreData: LocalDataService {
             .asSingle()  // FIXME: (jieyi 2018/05/22) There're some issues from RxCoreData can't transform to Single.
     }
 
-    func updateInformation(info entity: InformationEntity) -> Completable {
-        return Completable.create {
+    func update(info entity: Info) -> Completable {
+        return Completable.create { [weak self] completable in
+            guard let stringSelf = self else {
+                return Disposables.create()
+            }
+
             do {
-                try self.coreDataContext.rx.update(entity)
-                $0(.completed)
+                try stringSelf.coreDataContext.rx.update(entity)
+                completable(.completed)
             }
             catch {
-                $0(.error(error))
+                completable(.error(error))
             }
 
             return Disposables.create()
         }
     }
 
-    func removeInformation(info entity: InformationEntity? = nil) -> Completable {
-        return Completable.create {
+    func remove(info entity: Info? = nil) -> Completable {
+        return Completable.create { [weak self] completable in
+            guard let stringSelf = self else {
+                return Disposables.create()
+            }
+
             do {
                 if let e = entity {
-                    try self.coreDataContext.rx.delete(e)
-                    $0(.completed)
-                }
-                else {
-                    $0(.error(RxError.noElements))
+                    try stringSelf.coreDataContext.rx.delete(e)
+                    completable(.completed)
+                } else {
+                    completable(.error(RxError.noElements))
                 }
             }
             catch {
-                $0(.error(error))
+                completable(.error(error))
             }
 
             return Disposables.create()

@@ -22,6 +22,6 @@ class LocalDataStore: DataStore {
     }
 
     func writeInformation(info entity: InformationEntity) -> Completable {
-        return localRealm.updateInformation(info: entity)
+        return localRealm.update(info: entity)
     }
 }

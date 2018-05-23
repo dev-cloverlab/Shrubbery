@@ -9,7 +9,7 @@
 import ObjectMapper
 
 struct FakeEntity {
-    var infoList: [INFO]?
+    var infoList: [Info]?
 }
 
 extension FakeEntity: Entity {

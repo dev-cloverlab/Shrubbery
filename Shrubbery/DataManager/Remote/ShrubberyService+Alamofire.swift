@@ -12,7 +12,7 @@ import ObjectMapper
 
 class ShrubberyAlamofireService: RestHttpRequest, RemoteDataService {
     func retrieveFakeList() -> Single<FakeEntity> {
-        let uri = ShrubberyServiceConfig.BASE_SERVICE_DOMAIN + "/api/v1/info/list"
+        let uri = ShrubberyServiceConfig.baseServiceDomain + "/api/v1/info/list"
 
         return getRequest(uri: uri)
     }

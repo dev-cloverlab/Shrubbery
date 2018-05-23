@@ -38,6 +38,9 @@ extension ShrubberyMoyaConfig: TargetType {
         return ["Content-type": "application/json"]
     }
 
+    /**
+     For testing this api when there's no internet environment.
+    */
     public var sampleData: Data {
         switch self {
             case .retrieveFakeList:
