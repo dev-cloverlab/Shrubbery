@@ -75,5 +75,5 @@ public class ShrubberyCoreData: LocalDataService {
 }
 
 public struct ShrubberyCoreDataConstants {
-    public static let coredataName = "CoreData+Shrubbery"
+    public static let coredataName = "Shrubbery+CoreData"
 }

@@ -19,7 +19,6 @@
 		607002515045DB251D0E1BEE /* ShrubberyConfig+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004B302A5C270B70E1D4D /* ShrubberyConfig+Alamofire.swift */; };
 		607003173AD4A19D3FF31116 /* Interactable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607003C6FDB1A5F53C57F1A5 /* Interactable+Ext.swift */; };
 		607003B9C0D1F7F495F4011A /* ShrubberyConfig+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004FDE451F7AB945AE21F /* ShrubberyConfig+Moya.swift */; };
-		607003D2915492E6B6EB5367 /* InformationEntity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607008E1C1834AA9CFDF26C8 /* InformationEntity+Ext.swift */; };
 		6070046D1BA4EF930754875A /* LocalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607006109FFBEC7FE6E84A8B /* LocalDataService.swift */; };
 		607004B6F9BC3BB243FF9C7A /* ShrubberyService+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700BF1266C1723ECA3B3FB /* ShrubberyService+Alamofire.swift */; };
 		607004B9A9DCD4BDEF58B518 /* FakeEntity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700721E7500D46933A634A /* FakeEntity+Ext.swift */; };
@@ -27,11 +26,9 @@
 		607005056D7CD895C95C66B7 /* ShrubberyService+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700274EA9C2CD86EB22241 /* ShrubberyService+Moya.swift */; };
 		6070056B2DFEE4819DB99ABA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070046290BCEB654679F6FC /* DataStore.swift */; };
 		607005BC384CBD4B00C4AB0E /* RemoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007F076DBC4E728A43A7D /* RemoteDataStore.swift */; };
-		607007C6C2DDDF195F2AF861 /* ShrubberyCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60700C994C0810C5C1470B02 /* ShrubberyCoreData.xcdatamodeld */; };
 		607007CC518424D0DB8C5D8A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070095A1491AD36950E24C4 /* Constants.swift */; };
 		607008B720D0297A740DFB16 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F8E24448458AFDAD6E3 /* DataRepository.swift */; };
 		6070090E3AA1C66CB0F002AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */; };
-		60700964E9E6ACFE6F634BF0 /* CoreData+Shrubbery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 607006B9E9264C07A3A7FC48 /* CoreData+Shrubbery.xcdatamodeld */; };
 		607009C19C9F630CC9A6423D /* ObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070019E10623AC64F2F3BF7 /* ObjectExt.swift */; };
 		60700A2D603A3369BBA27E83 /* ShrubberyLocal+Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700819AB74A90064526F85 /* ShrubberyLocal+Realm.swift */; };
 		60700AFE519EE1949BD35D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60700613F24FAFF9E2FA694C /* Assets.xcassets */; };
@@ -40,14 +37,13 @@
 		60700BC49944645CAFA1929E /* ObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607009DDD761918ACF89E622 /* ObjectExt.swift */; };
 		60700C6A9F476DF11A340D1E /* ObjectMapper+RxExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004A3117EF09D639350ED /* ObjectMapper+RxExt.swift */; };
 		60700CF6D367C6FFF7220595 /* MainPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700A4751310FB333C48463 /* MainPresenterInput.swift */; };
-		60700D0E0D31D1821AE26188 /* FakeEntity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F551DF3F75C63DAD9CD /* FakeEntity+Ext.swift */; };
 		60700DC8AA984D76D1097C4B /* InformationEntity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070051796EF0C5BEAB3889B /* InformationEntity+Ext.swift */; };
 		60700E3E12577891180901CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6070043634FBDBA75C6D84F2 /* LaunchScreen.storyboard */; };
 		60700ED6D43490B6AF61EF95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60700B6AC725B0A0A31874AD /* Main.storyboard */; };
 		60700F2A4D066867635B92EB /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700442E4382BF75D44E923 /* Routable.swift */; };
 		60700FAFAB3F5FBD520E1519 /* RestHttpRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070084280D7DE46259B4832 /* RestHttpRequest+Alamofire.swift */; };
 		60700FDD11189C73C18E68F0 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007F5D53A13DFB20FF58F /* Presentable.swift */; };
-		60700FDE472E16559667FAA6 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607000315B65E625E1FE2DED /* Entity.swift */; };
+		943B28A220B588E80057FAE5 /* Shrubbery+CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 943B28A020B588E80057FAE5 /* Shrubbery+CoreData.xcdatamodeld */; };
 		94AA21EB20B54BB900E18A8A /* DataManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AA21E420B54BB900E18A8A /* DataManager.framework */; };
 		94AA21EC20B54BB900E18A8A /* DataManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94AA21E420B54BB900E18A8A /* DataManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94EC700F20AAE785002A277E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC700E20AAE785002A277E /* MainViewController.swift */; };
@@ -88,7 +84,6 @@
 		4AE5FA136FD00E5428A1957B /* Pods-Shrubbery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shrubbery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shrubbery/Pods-Shrubbery.debug.xcconfig"; sourceTree = "<group>"; };
 		4D8D7860FDA0F70392A600CB /* Pods-DataManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataManager/Pods-DataManager.debug.xcconfig"; sourceTree = "<group>"; };
 		5A2F9ED70CE617E552865876 /* MainConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
-		607000315B65E625E1FE2DED /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		607001006CC5EEC1260E4576 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		6070019E10623AC64F2F3BF7 /* ObjectExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectExt.swift; sourceTree = "<group>"; };
 		6070020F1B7C6A1D95037D4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -97,7 +92,6 @@
 		607003C6FDB1A5F53C57F1A5 /* Interactable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Interactable+Ext.swift"; sourceTree = "<group>"; };
 		60700442E4382BF75D44E923 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		6070046290BCEB654679F6FC /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		6070047F943D48BD9173797F /* CoreData+Shrubbery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreData+Shrubbery.xcdatamodel"; sourceTree = "<group>"; };
 		607004A3117EF09D639350ED /* ObjectMapper+RxExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObjectMapper+RxExt.swift"; sourceTree = "<group>"; };
 		607004B302A5C270B70E1D4D /* ShrubberyConfig+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyConfig+Alamofire.swift"; sourceTree = "<group>"; };
 		607004FDE451F7AB945AE21F /* ShrubberyConfig+Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyConfig+Moya.swift"; sourceTree = "<group>"; };
@@ -111,7 +105,6 @@
 		60700815BD0234BE50822A68 /* ShrubberyLocal+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyLocal+CoreData.swift"; sourceTree = "<group>"; };
 		60700819AB74A90064526F85 /* ShrubberyLocal+Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyLocal+Realm.swift"; sourceTree = "<group>"; };
 		6070084280D7DE46259B4832 /* RestHttpRequest+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestHttpRequest+Alamofire.swift"; sourceTree = "<group>"; };
-		607008E1C1834AA9CFDF26C8 /* InformationEntity+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InformationEntity+Ext.swift"; sourceTree = "<group>"; };
 		6070095A1491AD36950E24C4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		607009B09EB493E7D0374484 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		607009DDD761918ACF89E622 /* ObjectExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectExt.swift; sourceTree = "<group>"; };
@@ -121,7 +114,6 @@
 		60700BF1266C1723ECA3B3FB /* ShrubberyService+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyService+Alamofire.swift"; sourceTree = "<group>"; };
 		60700BFE41BF3741DC62728E /* LocalDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataStore.swift; sourceTree = "<group>"; };
 		60700E0B354BCD788E706105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		60700F551DF3F75C63DAD9CD /* FakeEntity+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FakeEntity+Ext.swift"; sourceTree = "<group>"; };
 		60700F8E24448458AFDAD6E3 /* DataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		60700F94744ABAB1634D7051 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		60700F983957E4F3B424077A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
@@ -129,6 +121,7 @@
 		783A0880B3DF42B3F8A78C19 /* MainRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		82414F08BAEC0034F65A4047 /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		8F8B743AABECFBE3201BDACA /* Pods-DataManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataManager/Pods-DataManager.release.xcconfig"; sourceTree = "<group>"; };
+		943B28A120B588E80057FAE5 /* Shrubbery+CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Shrubbery+CoreData.xcdatamodel"; sourceTree = "<group>"; };
 		945C1D9720AA8CE700BBC574 /* Pods_Shrubbery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Shrubbery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AA21E420B54BB900E18A8A /* DataManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D9353320AA753300520CDF /* Shrubbery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shrubbery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,7 +286,6 @@
 		607004D809F0C11A4C395D75 /* Local */ = {
 			isa = PBXGroup;
 			children = (
-				607007D537399008456AF1F1 /* CoreData */,
 				607006109FFBEC7FE6E84A8B /* LocalDataService.swift */,
 				60700819AB74A90064526F85 /* ShrubberyLocal+Realm.swift */,
 				60700815BD0234BE50822A68 /* ShrubberyLocal+CoreData.swift */,
@@ -311,6 +303,14 @@
 				60700BF1266C1723ECA3B3FB /* ShrubberyService+Alamofire.swift */,
 			);
 			path = Remote;
+			sourceTree = "<group>";
+		};
+		60700565E2A3578144250D2E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				943B28A020B588E80057FAE5 /* Shrubbery+CoreData.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		60700597B0F98C1235C4A33E = {
@@ -346,11 +346,11 @@
 			children = (
 				945C1D7820AA88C800BBC574 /* Base.lproj */,
 				607003029AE5D5FD7F635F36 /* Modules */,
-				60700D517AC2A15B1B38A076 /* Entities */,
 				60700EB994B354175D4A5E23 /* Resources */,
 				607001AF500194FD79A8F566 /* SupportedFiles */,
 				607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */,
 				607009A525628B5E69A428EB /* Common */,
+				60700565E2A3578144250D2E /* CoreData */,
 			);
 			path = Shrubbery;
 			sourceTree = "<group>";
@@ -369,15 +369,6 @@
 				60700F8E24448458AFDAD6E3 /* DataRepository.swift */,
 			);
 			path = Repositories;
-			sourceTree = "<group>";
-		};
-		607007D537399008456AF1F1 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				60700C994C0810C5C1470B02 /* ShrubberyCoreData.xcdatamodeld */,
-				607006B9E9264C07A3A7FC48 /* CoreData+Shrubbery.xcdatamodeld */,
-			);
-			path = CoreData;
 			sourceTree = "<group>";
 		};
 		6070083E2D38826ED788B694 /* DataStore */ = {
@@ -423,16 +414,6 @@
 				607004B302A5C270B70E1D4D /* ShrubberyConfig+Alamofire.swift */,
 			);
 			path = Config;
-			sourceTree = "<group>";
-		};
-		60700D517AC2A15B1B38A076 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				60700F551DF3F75C63DAD9CD /* FakeEntity+Ext.swift */,
-				607000315B65E625E1FE2DED /* Entity.swift */,
-				607008E1C1834AA9CFDF26C8 /* InformationEntity+Ext.swift */,
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		60700EB994B354175D4A5E23 /* Resources */ = {
@@ -713,15 +694,13 @@
 				2A9FBE33F19BD040D88783D9 /* MainRouterInput.swift in Sources */,
 				260AB9CACCAD38ABACB8778A /* MainRouter.swift in Sources */,
 				954A87D53B2247AEEC6C0CCC /* MainConfigurator.swift in Sources */,
+				943B28A220B588E80057FAE5 /* Shrubbery+CoreData.xcdatamodeld in Sources */,
 				42D5CA22E873274288930756 /* MainInitializer.swift in Sources */,
 				60700CF6D367C6FFF7220595 /* MainPresenterInput.swift in Sources */,
 				607003173AD4A19D3FF31116 /* Interactable+Ext.swift in Sources */,
 				60700FDD11189C73C18E68F0 /* Presentable.swift in Sources */,
 				60700F2A4D066867635B92EB /* Routable.swift in Sources */,
 				60700B79FAF114E3A533FCC1 /* Viewable.swift in Sources */,
-				60700D0E0D31D1821AE26188 /* FakeEntity+Ext.swift in Sources */,
-				60700FDE472E16559667FAA6 /* Entity.swift in Sources */,
-				607003D2915492E6B6EB5367 /* InformationEntity+Ext.swift in Sources */,
 				607007CC518424D0DB8C5D8A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -733,8 +712,6 @@
 				6070056B2DFEE4819DB99ABA /* DataStore.swift in Sources */,
 				6070006B46933E4FAE11D4EF /* LocalDataStore.swift in Sources */,
 				607005BC384CBD4B00C4AB0E /* RemoteDataStore.swift in Sources */,
-				607007C6C2DDDF195F2AF861 /* ShrubberyCoreData.xcdatamodeld in Sources */,
-				60700964E9E6ACFE6F634BF0 /* CoreData+Shrubbery.xcdatamodeld in Sources */,
 				6070046D1BA4EF930754875A /* LocalDataService.swift in Sources */,
 				60700A2D603A3369BBA27E83 /* ShrubberyLocal+Realm.swift in Sources */,
 				60700B828889B6B401E7694C /* ShrubberyLocal+CoreData.swift in Sources */,
@@ -1016,22 +993,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		607006B9E9264C07A3A7FC48 /* CoreData+Shrubbery.xcdatamodeld */ = {
+		943B28A020B588E80057FAE5 /* Shrubbery+CoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				6070047F943D48BD9173797F /* CoreData+Shrubbery.xcdatamodel */,
+				943B28A120B588E80057FAE5 /* Shrubbery+CoreData.xcdatamodel */,
 			);
-			currentVersion = 6070047F943D48BD9173797F /* CoreData+Shrubbery.xcdatamodel */;
-			path = "CoreData+Shrubbery.xcdatamodeld";
+			currentVersion = 943B28A120B588E80057FAE5 /* Shrubbery+CoreData.xcdatamodel */;
+			path = "Shrubbery+CoreData.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
-		};
-		60700C994C0810C5C1470B02 /* ShrubberyCoreData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-			);
-			path = ShrubberyCoreData.xcdatamodeld;
-			sourceTree = "<group>";
 		};
 /* End XCVersionGroup section */
 	};
