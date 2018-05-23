@@ -10,7 +10,7 @@ import RxSwift
 
 class MainPresenter: MainPresenterInput {
     weak var view: MainViewInput!
-    var interactor: MainInteractorInput!
+    var interactor: MainInteractor!
     var router: MainRouterInput!
 
     func viewIsReady() {

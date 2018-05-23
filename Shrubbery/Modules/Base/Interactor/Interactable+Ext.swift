@@ -8,7 +8,7 @@
 
 import RxSwift
 
-protocol Interactor: class {
+protocol Interactable: class {
 }
 
 extension ObservableType {
@@ -26,4 +26,3 @@ extension PrimitiveSequence {
             .observeOn(MainScheduler.instance)
     }
 }
-

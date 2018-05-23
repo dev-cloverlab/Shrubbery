@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-protocol MainInteractorInput: Interactor {
+protocol MainInteractorInput: Interactable {
     func getFakeList() -> Single<FakeEntity>
 
     func saveInformationEntity(info entity: InformationEntity) -> Completable

@@ -8,7 +8,7 @@
 
 import RxSwift
 
-protocol MainViewInput: View {
+protocol MainViewInput: Viewable {
     var disposable: DisposeBag { get }
 
     /**
