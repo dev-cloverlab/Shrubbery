@@ -13,7 +13,7 @@ import SwiftyBeaver
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    // MARK: Core Data stack upon iOS 10
+    // MARK: - Core Data stack upon iOS 10
     @available(iOS 10.0, *)
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "CoreData+Shrubbery")

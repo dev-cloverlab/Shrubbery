@@ -37,7 +37,7 @@ extension Info: Mappable {
     }
 }
 
-// MARK: Core Data
+// MARK: - Core Data
 extension Info: Persistable {
     static var entityName = "Fake"
     static var primaryAttributeName = Info.entityId

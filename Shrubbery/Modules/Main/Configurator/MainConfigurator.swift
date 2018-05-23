@@ -16,7 +16,7 @@ class MainModuleConfigurator {
     }
 
     private func configure(viewController: MainViewController) {
-        // MARK: Data Manager
+        // MARK: - Data Manager
         let coredata = ShrubberyCoreData()
         let realm = ShrubberyRealm()
         let alamofireRemote = ShrubberyAlamofireService()
