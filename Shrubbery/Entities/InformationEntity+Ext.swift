@@ -11,13 +11,13 @@ import RxCoreData
 import RealmSwift
 import ObjectMapper
 
-struct InformationEntity {
+public struct InformationEntity {
     var id: Int?
     var title: String?
     var updatedAt: Date?
 }
 
-typealias Info = InformationEntity
+public typealias Info = InformationEntity
 
 extension Info: Entity {
     static let entityId = "id"
@@ -27,10 +27,10 @@ extension Info: Entity {
 
 // MARK: Object Mapper
 extension Info: Mappable {
-    init?(map: Map) {
+    public init?(map: Map) {
     }
 
-    mutating func mapping(map: Map) {
+    public mutating func mapping(map: Map) {
         id <- map[Info.entityName]
         title <- map[Info.entityTitle]
         updatedAt <- (map[Info.updatedDate], DateTransform())
@@ -39,8 +39,8 @@ extension Info: Mappable {
 
 // MARK: - Core Data
 extension Info: Persistable {
-    static var entityName = "Fake"
-    static var primaryAttributeName = Info.entityId
+    public static var entityName = "Fake"
+    public static var primaryAttributeName = Info.entityId
     public var identity: String {
         return "shrubbery"
     }

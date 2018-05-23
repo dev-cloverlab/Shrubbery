@@ -8,8 +8,8 @@
 
 import RxSwift
 
-protocol DataStore {
+public protocol DataStore {
     func fetchFakeList() -> Single<FakeEntity>
 
-    func persist(info entity: Info) -> Completable
+    func persist(info entity: Info?) -> Completable
 }

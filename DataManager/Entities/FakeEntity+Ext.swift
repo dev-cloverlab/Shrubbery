@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-struct FakeEntity {
+public struct FakeEntity {
     typealias Infos = [Info]?
 
     var infoList: Infos = nil
@@ -20,10 +20,10 @@ extension FakeEntity: Entity {
 
 // MARK: - Object Mapper
 extension FakeEntity: Mappable {
-    init?(map: Map) {
+    public init?(map: Map) {
     }
 
-    mutating func mapping(map: Map) {
+    public mutating func mapping(map: Map) {
         infoList <- map[FakeEntity.infos]
     }
 }

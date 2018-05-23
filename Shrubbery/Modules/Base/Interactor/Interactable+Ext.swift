@@ -7,13 +7,14 @@
 //
 
 import RxSwift
+import DataManager
 
 protocol Interactable: class {
     var repository: DataStore! { get set }
 }
 
 extension ObservableType {
-    func thruInternet() -> Observable<E> {
+    public func thruInternet() -> Observable<E> {
         return self
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .userInitiated))
             .observeOn(MainScheduler.instance)
@@ -21,7 +22,7 @@ extension ObservableType {
 }
 
 extension PrimitiveSequence {
-    func thruInternet() -> PrimitiveSequence<Trait, Element> {
+    public func thruInternet() -> PrimitiveSequence<Trait, Element> {
         return self
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .userInitiated))
             .observeOn(MainScheduler.instance)

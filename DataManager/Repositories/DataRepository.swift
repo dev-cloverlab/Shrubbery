@@ -8,20 +8,20 @@
 
 import RxSwift
 
-class DataRepository: DataStore {
+public class DataRepository: DataStore {
     private var local: DataStore!
     private var remote: DataStore!
 
-    init(local localStore: DataStore, remote remoteStore: DataStore) {
+    public init(local localStore: DataStore, remote remoteStore: DataStore) {
         local = localStore
         remote = remoteStore
     }
 
-    func fetchFakeList() -> Single<FakeEntity> {
+    public func fetchFakeList() -> Single<FakeEntity> {
         return remote.fetchFakeList()
     }
 
-    func persist(info entity: Info) -> Completable {
+    public func persist(info entity: Info?) -> Completable {
         return local.persist(info: entity)
     }
 }

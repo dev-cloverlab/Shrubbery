@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import SwiftyBeaver
+import DataManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

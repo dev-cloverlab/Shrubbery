@@ -22,7 +22,7 @@ class MainPresenter: MainPresenterInput {
             .subscribe { single in
                 switch single {
                     case .success(let entity):
-                        entity.toShowAll()
+                        logw(entity.description())
                     case .error(let error):
                         loge(error)
                 }

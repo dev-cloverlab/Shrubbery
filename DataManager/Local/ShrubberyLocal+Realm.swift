@@ -9,15 +9,15 @@
 import RealmSwift
 import RxSwift
 
-class ShrubberyRealm: LocalDataService {
+public class ShrubberyRealm: LocalDataService {
     private var realm: Realm
     private lazy var realmPath = realm.configuration.fileURL!
 
-    init(_ realm: Realm) {
+    public init(_ realm: Realm) {
         self.realm = realm
     }
 
-    func retrieveFakeList() -> Single<FakeEntity> {
+    public func retrieveFakeList() -> Single<FakeEntity> {
         // FIXME: (jieyi 2018/05/22) Fix the object inheritance.
         return Single.just(realm.objects(TempObj.self))
             .map { list -> FakeEntity in
@@ -25,7 +25,7 @@ class ShrubberyRealm: LocalDataService {
             }
     }
 
-    func update(info entity: Info) -> Completable {
+    public func update(info entity: Info) -> Completable {
         // OPTIMIZE: (jieyi 2018/05/22) We can create a good add rx completable method.
         return Completable.create {
             do {
@@ -42,7 +42,7 @@ class ShrubberyRealm: LocalDataService {
         }
     }
 
-    func remove(info entity: Info? = nil) -> Completable {
+    public func remove(info entity: Info? = nil) -> Completable {
         return Completable.create { [weak self] completable in
             guard let strongSelf = self else {
                 return Disposables.create()

@@ -7,6 +7,7 @@
 //
 
 import RxSwift
+import DataManager
 
 class MainInteractor: MainInteractorInput {
     var repository: DataStore!
@@ -16,10 +17,15 @@ class MainInteractor: MainInteractorInput {
     }
 
     func getFakeList() -> Single<FakeEntity> {
-        return repository.fetchFakeList().thruInternet()
+//        return repository.fetchFakeList()
+        return Single.just(FakeEntity())
     }
 
-    func saveInformationEntity(info entity: InformationEntity) -> Completable {
-        return repository.persist(info: entity).thruInternet()
+    func saveInformationEntity(info entity: Info) -> Completable {
+        var ii = Info(id: 1231, title: "Hello world", updatedAt: Date())
+        return repository.persist(info: nil).thruInternet()
+//        return Completable.create { completable in
+//            return Disposables.create()
+//        }
     }
 }

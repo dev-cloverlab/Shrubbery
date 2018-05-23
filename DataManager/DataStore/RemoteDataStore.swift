@@ -8,20 +8,20 @@
 
 import RxSwift
 
-class RemoteDataStore: DataStore {
+public class RemoteDataStore: DataStore {
     private var v1Service: RemoteDataService!
     private var v2Service: RemoteDataService!
 
-    init(alamofire remote1: RemoteDataService, moya remote2: RemoteDataService) {
+    public init(alamofire remote1: RemoteDataService, moya remote2: RemoteDataService) {
         self.v1Service = remote1
         self.v2Service = remote2
     }
 
-    func fetchFakeList() -> Single<FakeEntity> {
+    public func fetchFakeList() -> Single<FakeEntity> {
         return v2Service.retrieveFakeList()
     }
 
-    func persist(info entity: Info) -> Completable {
+    public func persist(info entity: Info?) -> Completable {
         fatalError("writeInformation(info:) has not been implemented")
     }
 }

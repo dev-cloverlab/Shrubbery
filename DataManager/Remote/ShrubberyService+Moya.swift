@@ -9,17 +9,18 @@
 import Moya
 import RxSwift
 
-class ShrubberyMoyaService: RestHttpRequest, RemoteDataService {
+public class ShrubberyMoyaService: RestHttpRequest, RemoteDataService {
     private var provider: MoyaProvider<ShrubberyMoyaConfig>
     private lazy var rxProvider = {
         return provider.rx
     }()
 
-    init(_ provider: MoyaProvider<ShrubberyMoyaConfig>) {
+    public init(_ provider: MoyaProvider<ShrubberyMoyaConfig>) {
         self.provider = provider
     }
 
-    func retrieveFakeList() -> RxSwift.Single<FakeEntity> {
+    public func retrieveFakeList() -> RxSwift.Single<FakeEntity> {
+        print("Hello world")
         var request = rxProvider.request(.retrieveFakeList)
 #if DEBUG
         request = request.debug()

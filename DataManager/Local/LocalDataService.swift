@@ -8,10 +8,10 @@
 
 import RxSwift
 
-protocol LocalDataService {
+public protocol LocalDataService {
     func retrieveFakeList() -> Single<FakeEntity>
 
-    func update(info entity: InformationEntity) -> Completable
+    func update(info entity: Info) -> Completable
 
-    func remove(info entity: InformationEntity?) -> Completable
+    func remove(info entity: Info?) -> Completable
 }

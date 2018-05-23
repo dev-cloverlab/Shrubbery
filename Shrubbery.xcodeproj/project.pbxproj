@@ -14,34 +14,21 @@
 		42D5CA22E873274288930756 /* MainInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3B3DE7674A5E93E8A579E4 /* MainInitializer.swift */; };
 		60700041FB4C9F3579C0F1FA /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F983957E4F3B424077A /* Log.swift */; };
 		6070006B46933E4FAE11D4EF /* LocalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700BFE41BF3741DC62728E /* LocalDataStore.swift */; };
-		607001362AD33A4B5DD4A25C /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607000C17AAFA7222CF6DE87 /* DataRepository.swift */; };
-		60700160CB5EB8DF7496C9B9 /* LocalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700907EE7EF22CF4E9EB2F /* LocalDataService.swift */; };
 		607001CB04A220A60DAB90BF /* RemoteDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070024B44EC6C940EC3D1BC /* RemoteDataService.swift */; };
-		607001FC122EAD6ECDB5E5BE /* ShrubberyLocal+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070093E6AF13B40DD5CCFE2 /* ShrubberyLocal+CoreData.swift */; };
-		607002043FD298F2DD615F03 /* RestHttpRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700D79EC24493F280F734B /* RestHttpRequest+Alamofire.swift */; };
-		6070020BF394B4D0C285881A /* RemoteDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004EDC14609D3FCE000F8 /* RemoteDataService.swift */; };
 		607002387C5F45D5B6614B40 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607009B09EB493E7D0374484 /* Log.swift */; };
 		607002515045DB251D0E1BEE /* ShrubberyConfig+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004B302A5C270B70E1D4D /* ShrubberyConfig+Alamofire.swift */; };
 		607003173AD4A19D3FF31116 /* Interactable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607003C6FDB1A5F53C57F1A5 /* Interactable+Ext.swift */; };
-		607003A73697795B78EDD9B5 /* RemoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700168086EF555BCC26217 /* RemoteDataStore.swift */; };
 		607003B9C0D1F7F495F4011A /* ShrubberyConfig+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004FDE451F7AB945AE21F /* ShrubberyConfig+Moya.swift */; };
 		607003D2915492E6B6EB5367 /* InformationEntity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607008E1C1834AA9CFDF26C8 /* InformationEntity+Ext.swift */; };
-		60700428E1C710071ABDD23C /* ShrubberyConfig+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700251E09EAD674B767362 /* ShrubberyConfig+Alamofire.swift */; };
 		6070046D1BA4EF930754875A /* LocalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607006109FFBEC7FE6E84A8B /* LocalDataService.swift */; };
-		607004AB7BA6B0233D0D5BDC /* ShrubberyService+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607000D67BA7F60711541077 /* ShrubberyService+Alamofire.swift */; };
 		607004B6F9BC3BB243FF9C7A /* ShrubberyService+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700BF1266C1723ECA3B3FB /* ShrubberyService+Alamofire.swift */; };
 		607004B9A9DCD4BDEF58B518 /* FakeEntity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700721E7500D46933A634A /* FakeEntity+Ext.swift */; };
 		607004BA5AA604FCCB3CE9FF /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F94744ABAB1634D7051 /* Entity.swift */; };
 		607005056D7CD895C95C66B7 /* ShrubberyService+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700274EA9C2CD86EB22241 /* ShrubberyService+Moya.swift */; };
 		6070056B2DFEE4819DB99ABA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070046290BCEB654679F6FC /* DataStore.swift */; };
 		607005BC384CBD4B00C4AB0E /* RemoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007F076DBC4E728A43A7D /* RemoteDataStore.swift */; };
-		6070068D25DC0B63EB98862B /* ShrubberyLocal+Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070040A3276692577E6F491 /* ShrubberyLocal+Realm.swift */; };
-		607006F9D2AFF3F46517658E /* LocalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070042716E57298E63D3768 /* LocalDataStore.swift */; };
-		6070077479A8FD8E542CB26C /* ObjectMapper+RxExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700ED82CC96C33D5846C39 /* ObjectMapper+RxExt.swift */; };
 		607007C6C2DDDF195F2AF861 /* ShrubberyCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60700C994C0810C5C1470B02 /* ShrubberyCoreData.xcdatamodeld */; };
 		607007CC518424D0DB8C5D8A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070095A1491AD36950E24C4 /* Constants.swift */; };
-		60700859C58E3B446E76E2B9 /* ShrubberyConfig+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700009F50682B7E50AA373 /* ShrubberyConfig+Moya.swift */; };
-		607008A60377FEB21A05DCC0 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700D9049AC9922802CEDC5 /* DataStore.swift */; };
 		607008B720D0297A740DFB16 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F8E24448458AFDAD6E3 /* DataRepository.swift */; };
 		6070090E3AA1C66CB0F002AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */; };
 		60700964E9E6ACFE6F634BF0 /* CoreData+Shrubbery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 607006B9E9264C07A3A7FC48 /* CoreData+Shrubbery.xcdatamodeld */; };
@@ -52,7 +39,6 @@
 		60700B828889B6B401E7694C /* ShrubberyLocal+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700815BD0234BE50822A68 /* ShrubberyLocal+CoreData.swift */; };
 		60700BC49944645CAFA1929E /* ObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607009DDD761918ACF89E622 /* ObjectExt.swift */; };
 		60700C6A9F476DF11A340D1E /* ObjectMapper+RxExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004A3117EF09D639350ED /* ObjectMapper+RxExt.swift */; };
-		60700CAD4DA5D410BE60578A /* ShrubberyService+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607009AC301A5B419E37D9AE /* ShrubberyService+Moya.swift */; };
 		60700CF6D367C6FFF7220595 /* MainPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700A4751310FB333C48463 /* MainPresenterInput.swift */; };
 		60700D0E0D31D1821AE26188 /* FakeEntity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F551DF3F75C63DAD9CD /* FakeEntity+Ext.swift */; };
 		60700DC8AA984D76D1097C4B /* InformationEntity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070051796EF0C5BEAB3889B /* InformationEntity+Ext.swift */; };
@@ -62,7 +48,6 @@
 		60700FAFAB3F5FBD520E1519 /* RestHttpRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070084280D7DE46259B4832 /* RestHttpRequest+Alamofire.swift */; };
 		60700FDD11189C73C18E68F0 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007F5D53A13DFB20FF58F /* Presentable.swift */; };
 		60700FDE472E16559667FAA6 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607000315B65E625E1FE2DED /* Entity.swift */; };
-		9452B5A220B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9452B5A020B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodeld */; };
 		94AA21EB20B54BB900E18A8A /* DataManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AA21E420B54BB900E18A8A /* DataManager.framework */; };
 		94AA21EC20B54BB900E18A8A /* DataManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94AA21E420B54BB900E18A8A /* DataManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94EC700F20AAE785002A277E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC700E20AAE785002A277E /* MainViewController.swift */; };
@@ -103,26 +88,18 @@
 		4AE5FA136FD00E5428A1957B /* Pods-Shrubbery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shrubbery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shrubbery/Pods-Shrubbery.debug.xcconfig"; sourceTree = "<group>"; };
 		4D8D7860FDA0F70392A600CB /* Pods-DataManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataManager/Pods-DataManager.debug.xcconfig"; sourceTree = "<group>"; };
 		5A2F9ED70CE617E552865876 /* MainConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
-		60700009F50682B7E50AA373 /* ShrubberyConfig+Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyConfig+Moya.swift"; sourceTree = "<group>"; };
 		607000315B65E625E1FE2DED /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		607000C17AAFA7222CF6DE87 /* DataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
-		607000D67BA7F60711541077 /* ShrubberyService+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyService+Alamofire.swift"; sourceTree = "<group>"; };
 		607001006CC5EEC1260E4576 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		60700168086EF555BCC26217 /* RemoteDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataStore.swift; sourceTree = "<group>"; };
 		6070019E10623AC64F2F3BF7 /* ObjectExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectExt.swift; sourceTree = "<group>"; };
 		6070020F1B7C6A1D95037D4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		6070024B44EC6C940EC3D1BC /* RemoteDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataService.swift; sourceTree = "<group>"; };
-		60700251E09EAD674B767362 /* ShrubberyConfig+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyConfig+Alamofire.swift"; sourceTree = "<group>"; };
 		60700274EA9C2CD86EB22241 /* ShrubberyService+Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyService+Moya.swift"; sourceTree = "<group>"; };
 		607003C6FDB1A5F53C57F1A5 /* Interactable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Interactable+Ext.swift"; sourceTree = "<group>"; };
-		6070040A3276692577E6F491 /* ShrubberyLocal+Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyLocal+Realm.swift"; sourceTree = "<group>"; };
-		6070042716E57298E63D3768 /* LocalDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataStore.swift; sourceTree = "<group>"; };
 		60700442E4382BF75D44E923 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		6070046290BCEB654679F6FC /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		6070047F943D48BD9173797F /* CoreData+Shrubbery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreData+Shrubbery.xcdatamodel"; sourceTree = "<group>"; };
 		607004A3117EF09D639350ED /* ObjectMapper+RxExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObjectMapper+RxExt.swift"; sourceTree = "<group>"; };
 		607004B302A5C270B70E1D4D /* ShrubberyConfig+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyConfig+Alamofire.swift"; sourceTree = "<group>"; };
-		607004EDC14609D3FCE000F8 /* RemoteDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataService.swift; sourceTree = "<group>"; };
 		607004FDE451F7AB945AE21F /* ShrubberyConfig+Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyConfig+Moya.swift"; sourceTree = "<group>"; };
 		6070051796EF0C5BEAB3889B /* InformationEntity+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InformationEntity+Ext.swift"; sourceTree = "<group>"; };
 		607006109FFBEC7FE6E84A8B /* LocalDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataService.swift; sourceTree = "<group>"; };
@@ -135,10 +112,7 @@
 		60700819AB74A90064526F85 /* ShrubberyLocal+Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyLocal+Realm.swift"; sourceTree = "<group>"; };
 		6070084280D7DE46259B4832 /* RestHttpRequest+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestHttpRequest+Alamofire.swift"; sourceTree = "<group>"; };
 		607008E1C1834AA9CFDF26C8 /* InformationEntity+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InformationEntity+Ext.swift"; sourceTree = "<group>"; };
-		60700907EE7EF22CF4E9EB2F /* LocalDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataService.swift; sourceTree = "<group>"; };
-		6070093E6AF13B40DD5CCFE2 /* ShrubberyLocal+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyLocal+CoreData.swift"; sourceTree = "<group>"; };
 		6070095A1491AD36950E24C4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		607009AC301A5B419E37D9AE /* ShrubberyService+Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyService+Moya.swift"; sourceTree = "<group>"; };
 		607009B09EB493E7D0374484 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		607009DDD761918ACF89E622 /* ObjectExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectExt.swift; sourceTree = "<group>"; };
 		60700A4751310FB333C48463 /* MainPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenterInput.swift; sourceTree = "<group>"; };
@@ -146,10 +120,7 @@
 		60700B6AC725B0A0A31874AD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		60700BF1266C1723ECA3B3FB /* ShrubberyService+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyService+Alamofire.swift"; sourceTree = "<group>"; };
 		60700BFE41BF3741DC62728E /* LocalDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataStore.swift; sourceTree = "<group>"; };
-		60700D79EC24493F280F734B /* RestHttpRequest+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestHttpRequest+Alamofire.swift"; sourceTree = "<group>"; };
-		60700D9049AC9922802CEDC5 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		60700E0B354BCD788E706105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		60700ED82CC96C33D5846C39 /* ObjectMapper+RxExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObjectMapper+RxExt.swift"; sourceTree = "<group>"; };
 		60700F551DF3F75C63DAD9CD /* FakeEntity+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FakeEntity+Ext.swift"; sourceTree = "<group>"; };
 		60700F8E24448458AFDAD6E3 /* DataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		60700F94744ABAB1634D7051 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -158,7 +129,6 @@
 		783A0880B3DF42B3F8A78C19 /* MainRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		82414F08BAEC0034F65A4047 /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		8F8B743AABECFBE3201BDACA /* Pods-DataManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataManager/Pods-DataManager.release.xcconfig"; sourceTree = "<group>"; };
-		9452B5A120B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreData+Shrubbery.xcdatamodel"; sourceTree = "<group>"; };
 		945C1D9720AA8CE700BBC574 /* Pods_Shrubbery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Shrubbery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94AA21E420B54BB900E18A8A /* DataManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D9353320AA753300520CDF /* Shrubbery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shrubbery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,16 +228,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		607001276BDAA62593B1B599 /* DataStore */ = {
-			isa = PBXGroup;
-			children = (
-				60700D9049AC9922802CEDC5 /* DataStore.swift */,
-				6070042716E57298E63D3768 /* LocalDataStore.swift */,
-				60700168086EF555BCC26217 /* RemoteDataStore.swift */,
-			);
-			path = DataStore;
-			sourceTree = "<group>";
-		};
 		6070013ABF27A1263873966C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,17 +301,6 @@
 			path = Local;
 			sourceTree = "<group>";
 		};
-		6070053B0ABA384D9B257B04 /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				60700C88A70B6D715C721E0F /* Repositories */,
-				607001276BDAA62593B1B599 /* DataStore */,
-				60700DE84B15136A9AF0C92A /* Local */,
-				60700F38B7B38833D16D369C /* Remote */,
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
 		60700544C2D2FD8705D8261E /* Remote */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,15 +311,6 @@
 				60700BF1266C1723ECA3B3FB /* ShrubberyService+Alamofire.swift */,
 			);
 			path = Remote;
-			sourceTree = "<group>";
-		};
-		60700571137C10100D7905D2 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				60700251E09EAD674B767362 /* ShrubberyConfig+Alamofire.swift */,
-				60700009F50682B7E50AA373 /* ShrubberyConfig+Moya.swift */,
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 		60700597B0F98C1235C4A33E = {
@@ -411,7 +351,6 @@
 				607001AF500194FD79A8F566 /* SupportedFiles */,
 				607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */,
 				607009A525628B5E69A428EB /* Common */,
-				6070053B0ABA384D9B257B04 /* DataManager */,
 			);
 			path = Shrubbery;
 			sourceTree = "<group>";
@@ -468,14 +407,6 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		60700A17C76A32225117AF4F /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				9452B5A020B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodeld */,
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
 		60700ACC68DEB49920F2525D /* HttpRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,23 +414,6 @@
 				6070084280D7DE46259B4832 /* RestHttpRequest+Alamofire.swift */,
 			);
 			path = HttpRequest;
-			sourceTree = "<group>";
-		};
-		60700B407891825CBE730D9E /* HttpRequest */ = {
-			isa = PBXGroup;
-			children = (
-				60700ED82CC96C33D5846C39 /* ObjectMapper+RxExt.swift */,
-				60700D79EC24493F280F734B /* RestHttpRequest+Alamofire.swift */,
-			);
-			path = HttpRequest;
-			sourceTree = "<group>";
-		};
-		60700C88A70B6D715C721E0F /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				607000C17AAFA7222CF6DE87 /* DataRepository.swift */,
-			);
-			path = Repositories;
 			sourceTree = "<group>";
 		};
 		60700CD68BE7D7D833E2F601 /* Config */ = {
@@ -521,35 +435,12 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		60700DE84B15136A9AF0C92A /* Local */ = {
-			isa = PBXGroup;
-			children = (
-				60700907EE7EF22CF4E9EB2F /* LocalDataService.swift */,
-				6070093E6AF13B40DD5CCFE2 /* ShrubberyLocal+CoreData.swift */,
-				60700A17C76A32225117AF4F /* CoreData */,
-				6070040A3276692577E6F491 /* ShrubberyLocal+Realm.swift */,
-			);
-			path = Local;
-			sourceTree = "<group>";
-		};
 		60700EB994B354175D4A5E23 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				60700613F24FAFF9E2FA694C /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		60700F38B7B38833D16D369C /* Remote */ = {
-			isa = PBXGroup;
-			children = (
-				60700571137C10100D7905D2 /* Config */,
-				60700B407891825CBE730D9E /* HttpRequest */,
-				607004EDC14609D3FCE000F8 /* RemoteDataService.swift */,
-				607000D67BA7F60711541077 /* ShrubberyService+Alamofire.swift */,
-				607009AC301A5B419E37D9AE /* ShrubberyService+Moya.swift */,
-			);
-			path = Remote;
 			sourceTree = "<group>";
 		};
 		7599C1065BECD64B56292418 /* Interactor */ = {
@@ -816,7 +707,6 @@
 				607009C19C9F630CC9A6423D /* ObjectExt.swift in Sources */,
 				FD1E79476EDB821BA0E3DDEC /* MainViewInput.swift in Sources */,
 				94EC700F20AAE785002A277E /* MainViewController.swift in Sources */,
-				9452B5A220B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodeld in Sources */,
 				AFFA748641539BA8E17525CC /* MainPresenter.swift in Sources */,
 				0DFD7D94E21344D8ED2F2A0B /* MainInteractorInput.swift in Sources */,
 				DB0AFAB6EF029C6DAA11C590 /* MainInteractor.swift in Sources */,
@@ -829,23 +719,9 @@
 				60700FDD11189C73C18E68F0 /* Presentable.swift in Sources */,
 				60700F2A4D066867635B92EB /* Routable.swift in Sources */,
 				60700B79FAF114E3A533FCC1 /* Viewable.swift in Sources */,
-				607008A60377FEB21A05DCC0 /* DataStore.swift in Sources */,
-				607006F9D2AFF3F46517658E /* LocalDataStore.swift in Sources */,
-				607003A73697795B78EDD9B5 /* RemoteDataStore.swift in Sources */,
-				607001362AD33A4B5DD4A25C /* DataRepository.swift in Sources */,
-				60700160CB5EB8DF7496C9B9 /* LocalDataService.swift in Sources */,
-				6070020BF394B4D0C285881A /* RemoteDataService.swift in Sources */,
 				60700D0E0D31D1821AE26188 /* FakeEntity+Ext.swift in Sources */,
 				60700FDE472E16559667FAA6 /* Entity.swift in Sources */,
-				607004AB7BA6B0233D0D5BDC /* ShrubberyService+Alamofire.swift in Sources */,
-				607001FC122EAD6ECDB5E5BE /* ShrubberyLocal+CoreData.swift in Sources */,
-				60700428E1C710071ABDD23C /* ShrubberyConfig+Alamofire.swift in Sources */,
-				6070077479A8FD8E542CB26C /* ObjectMapper+RxExt.swift in Sources */,
-				607002043FD298F2DD615F03 /* RestHttpRequest+Alamofire.swift in Sources */,
 				607003D2915492E6B6EB5367 /* InformationEntity+Ext.swift in Sources */,
-				6070068D25DC0B63EB98862B /* ShrubberyLocal+Realm.swift in Sources */,
-				60700859C58E3B446E76E2B9 /* ShrubberyConfig+Moya.swift in Sources */,
-				60700CAD4DA5D410BE60578A /* ShrubberyService+Moya.swift in Sources */,
 				607007CC518424D0DB8C5D8A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1156,16 +1032,6 @@
 			);
 			path = ShrubberyCoreData.xcdatamodeld;
 			sourceTree = "<group>";
-		};
-		9452B5A020B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9452B5A120B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodel */,
-			);
-			currentVersion = 9452B5A120B2B9F800CDECBB /* CoreData+Shrubbery.xcdatamodel */;
-			path = "CoreData+Shrubbery.xcdatamodeld";
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};

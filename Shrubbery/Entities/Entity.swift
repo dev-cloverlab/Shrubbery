@@ -10,11 +10,11 @@ protocol Entity {
 }
 
 extension Entity {
-    func toShowAll() {
+    func description() -> String {
         // OPTIMIZE: (jieyi 2018/05/18) There's a better way for replacing multiple characters.
-        logi(extractSelfToString(self: self)
-                 .replacingOccurrences(of: "\\", with: "")
-                 .replacingOccurrences(of: "\"", with: ""))
+        return extractSelfToString(self: self)
+            .replacingOccurrences(of: "\\", with: "")
+            .replacingOccurrences(of: "\"", with: "")
     }
 }
 

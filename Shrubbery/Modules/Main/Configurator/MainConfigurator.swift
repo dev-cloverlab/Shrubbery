@@ -8,7 +8,9 @@
 
 import UIKit
 import RealmSwift
+import CoreData
 import Moya
+import DataManager
 
 class MainModuleConfigurator {
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
@@ -19,7 +21,11 @@ class MainModuleConfigurator {
 
     private func configure(viewController: MainViewController) {
         // MARK: - Data Manager
-        let coredata = ShrubberyCoreData()
+        let coreDataContext: NSManagedObjectContext! = {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            return appDelegate.persistentContainer.viewContext
+        }()
+        let coredata = ShrubberyCoreData(content: coreDataContext)
         let realm = ShrubberyRealm(try! Realm())
         let alamofireRemote = ShrubberyAlamofireService()
         let moyaRemote = ShrubberyMoyaService(MoyaProvider<ShrubberyMoyaConfig>())

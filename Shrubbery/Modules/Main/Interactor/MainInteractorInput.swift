@@ -8,9 +8,10 @@
 
 import Foundation
 import RxSwift
+import DataManager
 
 protocol MainInteractorInput: Interactable {
     func getFakeList() -> Single<FakeEntity>
 
-    func saveInformationEntity(info entity: InformationEntity) -> Completable
+    func saveInformationEntity(info entity: Info) -> Completable
 }

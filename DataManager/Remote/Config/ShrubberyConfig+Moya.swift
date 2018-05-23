@@ -8,7 +8,7 @@
 
 import Moya
 
-enum ShrubberyMoyaConfig {
+public enum ShrubberyMoyaConfig {
     case retrieveFakeList
 }
 
