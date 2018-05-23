@@ -58,8 +58,7 @@ extension Info: Persistable {
 
         do {
             try entity.managedObjectContext?.save()
-        }
-        catch {
+        } catch {
             loge(error)
         }
     }

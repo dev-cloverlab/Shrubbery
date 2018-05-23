@@ -13,8 +13,8 @@ extension Entity {
     func toShowAll() {
         // OPTIMIZE: (jieyi 2018/05/18) There's a better way for replacing multiple characters.
         logi(extractSelfToString(self: self)
-            .replacingOccurrences(of: "\\", with: "")
-            .replacingOccurrences(of: "\"", with: ""))
+                 .replacingOccurrences(of: "\\", with: "")
+                 .replacingOccurrences(of: "\"", with: ""))
     }
 }
 

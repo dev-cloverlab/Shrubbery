@@ -39,8 +39,7 @@ class ShrubberyCoreData: LocalDataService {
             do {
                 try stringSelf.coreDataContext.rx.update(entity)
                 completable(.completed)
-            }
-            catch {
+            } catch {
                 completable(.error(error))
             }
 
@@ -61,8 +60,7 @@ class ShrubberyCoreData: LocalDataService {
                 } else {
                     completable(.error(RxError.noElements))
                 }
-            }
-            catch {
+            } catch {
                 completable(.error(error))
             }
 

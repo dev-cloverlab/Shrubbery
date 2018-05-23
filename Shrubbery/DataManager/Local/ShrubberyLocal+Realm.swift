@@ -30,8 +30,7 @@ class ShrubberyRealm: LocalDataService {
                     self.realm.add(TempObj())
                 }
                 $0(.completed)
-            }
-            catch {
+            } catch {
                 $0(.error(error))
             }
 
@@ -40,14 +39,17 @@ class ShrubberyRealm: LocalDataService {
     }
 
     func remove(info entity: Info? = nil) -> Completable {
-        return Completable.create {
+        return Completable.create { [weak self] completable in
+            guard let strongSelf = self else {
+                return Disposables.create()
+            }
+
             do {
                 // OPTIMIZE: (jieyi 2018/05/22) We can create a good add rx completable method.
-                self.realm.delete(TempObj())
-                $0(.completed)
-            }
-            catch {
-                $0(.error(error))
+                strongSelf.realm.delete(TempObj())
+                completable(.completed)
+            } catch {
+                completable(.error(error))
             }
 
             return Disposables.create()

@@ -37,8 +37,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Init the log module.
         let console = ConsoleDestination()
-        console.format = LOGGER_FORMAT
-        LOGGER.addDestination(console)
+        console.format = loggerFormat
+        swiftyLogger.addDestination(console)
 
         return true
     }

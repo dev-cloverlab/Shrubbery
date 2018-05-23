@@ -9,11 +9,13 @@
 import ObjectMapper
 
 struct FakeEntity {
-    var infoList: [Info]?
+    typealias Infos = [Info]?
+
+    var infoList: Infos = nil
 }
 
 extension FakeEntity: Entity {
-    static let INFOS = "infos"
+    static let infos = "infos"
 }
 
 // MARK: Object Mapper
@@ -22,6 +24,6 @@ extension FakeEntity: Mappable {
     }
 
     mutating func mapping(map: Map) {
-        infoList <- map[FakeEntity.INFOS]
+        infoList <- map[FakeEntity.infos]
     }
 }

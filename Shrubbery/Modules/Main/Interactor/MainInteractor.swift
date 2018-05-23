@@ -20,6 +20,6 @@ class MainInteractor: MainInteractorInput {
     }
 
     func saveInformationEntity(info entity: InformationEntity) -> Completable {
-        return repository.writeInformation(info: entity).thruInternet()
+        return repository.persist(info: entity).thruInternet()
     }
 }
