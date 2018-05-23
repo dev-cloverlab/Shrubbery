@@ -10,6 +10,7 @@ import CoreData
 import RxCoreData
 import RealmSwift
 import ObjectMapper
+import CommonUtil
 
 public struct InformationEntity {
     var id: Int?
@@ -46,9 +47,9 @@ extension Info: Persistable {
     }
 
     public init(entity: NSManagedObject) {
-        id = entity.value(forKey: Info.entityId) as! Int
-        title = entity.value(forKey: Info.entityTitle) as! String
-        updatedAt = entity.value(forKey: Info.updatedDate) as! Date
+        id = entity.value(forKey: Info.entityId) as? Int
+        title = entity.value(forKey: Info.entityTitle) as? String
+        updatedAt = entity.value(forKey: Info.updatedDate) as? Date
     }
 
     public func update(_ entity: NSManagedObject) {

@@ -6,6 +6,8 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
+import CommonUtil
+
 protocol Entity {
 }
 
