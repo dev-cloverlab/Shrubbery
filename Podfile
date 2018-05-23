@@ -66,6 +66,12 @@ target 'Shrubbery' do
     pod 'Swinject', '~> 2.4.0'
   end
 
+  target 'CommonUtil' do
+    inherit! :search_paths
+    # For Logging
+    pod 'SwiftyBeaver'
+  end
+
   #  target 'ShrubberyTests' do
   #    inherit! :search_paths
   #    pod 'RxBlocking', '~> 4.0'
