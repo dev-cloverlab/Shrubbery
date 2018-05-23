@@ -46,9 +46,9 @@ extension Info: Persistable {
     }
 
     public init(entity: NSManagedObject) {
-        id = entity.value(forKey: Info.entityId) as! Int
-        title = entity.value(forKey: Info.entityTitle) as! String
-        updatedAt = entity.value(forKey: Info.updatedDate) as! Date
+        id = entity.value(forKey: Info.entityId) as? Int
+        title = entity.value(forKey: Info.entityTitle) as? String
+        updatedAt = entity.value(forKey: Info.updatedDate) as? Date
     }
 
     public func update(_ entity: NSManagedObject) {
@@ -59,7 +59,7 @@ extension Info: Persistable {
         do {
             try entity.managedObjectContext?.save()
         } catch {
-            loge(error)
+            print(error)
         }
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol HasStandard {
+public protocol HasStandard {
 }
 
 extension HasStandard {
@@ -26,7 +26,7 @@ extension HasStandard {
 extension NSObject: HasStandard {
 }
 
-internal func unwrap<T>(any: T) -> Any {
+public func unwrap<T>(any: T) -> Any {
     let mirror = Mirror(reflecting: any)
 
     guard mirror.displayStyle == .optional,

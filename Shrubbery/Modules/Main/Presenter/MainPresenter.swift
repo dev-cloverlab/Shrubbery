@@ -7,6 +7,7 @@
 //
 
 import RxSwift
+import CommonUtil
 
 class MainPresenter: MainPresenterInput {
     weak var view: MainViewInput!
@@ -22,7 +23,7 @@ class MainPresenter: MainPresenterInput {
             .subscribe { single in
                 switch single {
                     case .success(let entity):
-                        logw(entity.description())
+                        logd(entity.description())
                     case .error(let error):
                         loge(error)
                 }
