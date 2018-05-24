@@ -1,2 +1,4 @@
-disabled_rules: # rule identifiers to exclude from running
+disabled_rules:  # rule identifiers to exclude from running
   - switch_case_alignment
+identifier_name:  # the length of a variable name
+  min_length: 1
