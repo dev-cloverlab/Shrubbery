@@ -19,12 +19,12 @@ extension FakeEntity: Entity {
 }
 
 // MARK: - Object Mapper
+
 extension FakeEntity: Mappable {
     public init?(map: Map) {
     }
 
     public mutating func mapping(map: Map) {
-        infoList <- map[FakeEntity.infos]
+        self.infoList <- map[FakeEntity.infos]
     }
 }
-

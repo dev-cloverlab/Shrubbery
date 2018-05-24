@@ -24,4 +24,3 @@ extension RestHttpRequest {
         return request.mapToObject(T.self).asSingle()
     }
 }
-

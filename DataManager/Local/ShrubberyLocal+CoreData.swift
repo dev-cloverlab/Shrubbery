@@ -31,7 +31,7 @@ public class ShrubberyCoreData: LocalDataService {
                 entity.infoList = list
                 return entity
             }
-            .asSingle()  // FIXME: (jieyi 2018/05/22) There're some issues from RxCoreData can't transform to Single.
+            .asSingle() // FIXME: (jieyi 2018/05/22) There're some issues from RxCoreData can't transform to Single.
     }
 
     public func update(info entity: Info) -> Completable {
@@ -76,4 +76,3 @@ public class ShrubberyCoreData: LocalDataService {
 public struct ShrubberyCoreDataConstants {
     public static let coredataName = "Shrubbery+CoreData"
 }
-

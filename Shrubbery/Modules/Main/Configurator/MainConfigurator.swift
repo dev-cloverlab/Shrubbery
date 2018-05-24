@@ -12,7 +12,7 @@ import Moya
 import RealmSwift
 import UIKit
 
-class MainModuleConfigurator {
+class MainModuleConfigurator: Configurator {
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
         if let viewController = viewInput as? MainViewController {
             configure(viewController: viewController)
@@ -20,7 +20,9 @@ class MainModuleConfigurator {
     }
 
     private func configure(viewController: MainViewController) {
+
         // MARK: - Data Manager
+
         let coreDataContext: NSManagedObjectContext! = {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             return appDelegate.persistentContainer.viewContext
@@ -42,4 +44,3 @@ class MainModuleConfigurator {
         viewController.presenter = presenter
     }
 }
-

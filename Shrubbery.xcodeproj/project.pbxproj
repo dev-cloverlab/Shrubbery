@@ -25,6 +25,7 @@
 		607005056D7CD895C95C66B7 /* ShrubberyService+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700274EA9C2CD86EB22241 /* ShrubberyService+Moya.swift */; };
 		6070056B2DFEE4819DB99ABA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070046290BCEB654679F6FC /* DataStore.swift */; };
 		607005BC384CBD4B00C4AB0E /* RemoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007F076DBC4E728A43A7D /* RemoteDataStore.swift */; };
+		607006F196B55B0FBC119388 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700069E90D46B12C7B5E41 /* Configurator.swift */; };
 		607008B720D0297A740DFB16 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F8E24448458AFDAD6E3 /* DataRepository.swift */; };
 		6070090E3AA1C66CB0F002AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */; };
 		60700A029AC448A1F7845578 /* ObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700AAF7A833D9F837844DC /* ObjectExt.swift */; };
@@ -102,6 +103,7 @@
 		4AE5FA136FD00E5428A1957B /* Pods-Shrubbery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shrubbery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shrubbery/Pods-Shrubbery.debug.xcconfig"; sourceTree = "<group>"; };
 		4D8D7860FDA0F70392A600CB /* Pods-DataManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataManager/Pods-DataManager.debug.xcconfig"; sourceTree = "<group>"; };
 		5A2F9ED70CE617E552865876 /* MainConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
+		60700069E90D46B12C7B5E41 /* Configurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		607001006CC5EEC1260E4576 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		6070020F1B7C6A1D95037D4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		6070024B44EC6C940EC3D1BC /* RemoteDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataService.swift; sourceTree = "<group>"; };
@@ -290,6 +292,14 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		60700378452731EC7C977921 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				60700069E90D46B12C7B5E41 /* Configurator.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		607004D809F0C11A4C395D75 /* Local */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +377,7 @@
 				607001AF500194FD79A8F566 /* SupportedFiles */,
 				607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */,
 				60700565E2A3578144250D2E /* CoreData */,
+				60700378452731EC7C977921 /* DI */,
 			);
 			path = Shrubbery;
 			sourceTree = "<group>";
@@ -783,6 +794,7 @@
 				60700FDD11189C73C18E68F0 /* Presentable.swift in Sources */,
 				60700F2A4D066867635B92EB /* Routable.swift in Sources */,
 				60700B79FAF114E3A533FCC1 /* Viewable.swift in Sources */,
+				607006F196B55B0FBC119388 /* Configurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

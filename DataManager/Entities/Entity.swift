@@ -26,7 +26,7 @@ extension Entity {
 
      - parameters:
         - entity: Entity self.
-     
+
      - returns: The information of Entity's all variables.
     */
     private func extractSelfToString(self entity: Entity) -> String {
@@ -70,7 +70,3 @@ extension Entity {
         return String(describing: content)
     }
 }
-
-
-
-

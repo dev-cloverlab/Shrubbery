@@ -20,8 +20,8 @@ public class ShrubberyRealm: LocalDataService {
     public func retrieveFakeList() -> Single<FakeEntity> {
         // FIXME: (jieyi 2018/05/22) Fix the object inheritance.
         return Single.just(realm.objects(TempObj.self))
-            .map { list -> FakeEntity in
-                return FakeEntity(infoList: nil)
+            .map { _ -> FakeEntity in
+                FakeEntity(infoList: nil)
             }
     }
 
@@ -66,4 +66,3 @@ class TempObj: Object {
     @objc dynamic var title: String = ""
     @objc dynamic var name: String = ""
 }
-

@@ -16,31 +16,35 @@ extension ShrubberyMoyaConfig: TargetType {
     public var baseURL: URL {
         return URL(string: "http://172.16.31.166:3000")!
     }
+
     public var path: String {
         switch self {
             case .retrieveFakeList:
                 return "/api/v1/info/list"
         }
     }
+
     public var method: Moya.Method {
         switch self {
             case .retrieveFakeList:
                 return .get
         }
     }
+
     public var task: Task {
         switch self {
-            case .retrieveFakeList:  // Doesn't need the parameters.
+            case .retrieveFakeList: // Doesn't need the parameters.
                 return .requestPlain
         }
     }
+
     public var headers: [String: String]? {
         return ["Content-type": "application/json"]
     }
 
     /**
      For testing this api when there's no internet environment.
-    */
+     */
     public var sampleData: Data {
         switch self {
             case .retrieveFakeList:

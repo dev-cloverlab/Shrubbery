@@ -19,4 +19,3 @@ public class ShrubberyAlamofireService: RestHttpRequest, RemoteDataService {
         return getRequest(uri: uri)
     }
 }
-

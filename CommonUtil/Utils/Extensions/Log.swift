@@ -12,10 +12,10 @@ public let loggerFormat = "$Dyyyy-MM-dd HH:mm:ss$d $L ($N.swift:$l): $M"
 public let swiftyLogger = SwiftyBeaver.self
 
 public func logv(_ message: @autoclosure () -> Any,
-          _file: String = #file,
-          _ function: String = #function,
-          line: Int = #line,
-          context: Any? = nil) {
+                 _file: String = #file,
+                 _ function: String = #function,
+                 line: Int = #line,
+                 context: Any? = nil) {
     swiftyLogger.verbose(message, _file, function, line: line, context: context)
 }
 

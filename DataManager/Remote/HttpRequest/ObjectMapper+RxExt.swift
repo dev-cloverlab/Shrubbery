@@ -32,4 +32,3 @@ extension PrimitiveSequence where TraitType == SingleTrait, Element == String {
         }
     }
 }
-

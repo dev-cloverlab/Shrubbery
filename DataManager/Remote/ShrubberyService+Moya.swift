@@ -12,7 +12,7 @@ import RxSwift
 public class ShrubberyMoyaService: RestHttpRequest, RemoteDataService {
     private var provider: MoyaProvider<ShrubberyMoyaConfig>
     private lazy var rxProvider = {
-        return provider.rx
+        provider.rx
     }()
 
     public init(_ provider: MoyaProvider<ShrubberyMoyaConfig>) {
@@ -28,4 +28,3 @@ public class ShrubberyMoyaService: RestHttpRequest, RemoteDataService {
         return request.mapString().mapToObject(FakeEntity.self)
     }
 }
-

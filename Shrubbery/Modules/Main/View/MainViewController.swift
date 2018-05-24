@@ -15,6 +15,7 @@ class MainViewController: UIViewController, MainViewInput {
     var disposable = DisposeBag()
 
     // MARK: - Life cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,7 +29,7 @@ class MainViewController: UIViewController, MainViewInput {
     }
 
     // MARK: - MainViewInput
+
     func setupInitialState() {
     }
 }
-

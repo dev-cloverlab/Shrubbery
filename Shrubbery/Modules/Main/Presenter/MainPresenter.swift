@@ -31,4 +31,3 @@ class MainPresenter: MainPresenterInput {
             .disposed(by: view.disposable)
     }
 }
-

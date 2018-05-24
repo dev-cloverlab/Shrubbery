@@ -9,8 +9,8 @@
 import UIKit
 
 class MainModuleInitializer: NSObject {
-    //Connect with object on storyboard
-    @IBOutlet weak var mainViewController: MainViewController!
+    // Connect with object on storyboard
+    @IBOutlet var mainViewController: MainViewController!
 
     override func awakeFromNib() {
         let configurator = MainModuleConfigurator()

@@ -24,4 +24,3 @@ class MainInteractor: MainInteractorInput {
         return repository.persist(info: entity).thruInternet()
     }
 }
-

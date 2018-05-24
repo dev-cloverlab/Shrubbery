@@ -18,7 +18,7 @@ extension HasStandard {
         return self
     }
 
-    @inline(__always) func run<T>(closure: (Self) -> (T)) -> T {
+    @inline(__always) func run<T>(closure: (Self) -> T) -> T {
         return closure(self)
     }
 }

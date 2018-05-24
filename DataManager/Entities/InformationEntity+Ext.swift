@@ -26,7 +26,8 @@ extension Info: Entity {
     static let updatedDate = "updated_at"
 }
 
-// MARK: Object Mapper
+// MARK: - Object Mapper
+
 extension Info: Mappable {
     public init?(map: Map) {
     }
@@ -39,6 +40,7 @@ extension Info: Mappable {
 }
 
 // MARK: - Core Data
+
 extension Info: Persistable {
     public static var entityName = "Fake"
     public static var primaryAttributeName = Info.entityId
@@ -64,4 +66,3 @@ extension Info: Persistable {
         }
     }
 }
-

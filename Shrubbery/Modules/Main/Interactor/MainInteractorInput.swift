@@ -15,4 +15,3 @@ protocol MainInteractorInput: Interactable {
 
     func saveInformationEntity(info entity: Info) -> Completable
 }
-
