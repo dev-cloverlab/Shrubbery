@@ -10,6 +10,7 @@ import CoreData
 import RxCoreData
 import RealmSwift
 import ObjectMapper
+import CommonUtil
 
 public struct InformationEntity {
     var id: Int?
