@@ -6,8 +6,8 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import RxSwift
 import ObjectMapper
+import RxSwift
 
 extension ObservableType where E == String {
     func mapToObject<M: Mappable>(_ type: M.Type) -> Observable<M> {
@@ -32,3 +32,4 @@ extension PrimitiveSequence where TraitType == SingleTrait, Element == String {
         }
     }
 }
+

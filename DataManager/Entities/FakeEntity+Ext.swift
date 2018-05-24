@@ -27,3 +27,4 @@ extension FakeEntity: Mappable {
         infoList <- map[FakeEntity.infos]
     }
 }
+

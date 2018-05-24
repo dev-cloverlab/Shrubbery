@@ -6,8 +6,8 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import RxSwift
 import DataManager
+import RxSwift
 
 class MainInteractor: MainInteractorInput {
     var repository: DataStore!
@@ -24,3 +24,4 @@ class MainInteractor: MainInteractorInput {
         return repository.persist(info: entity).thruInternet()
     }
 }
+

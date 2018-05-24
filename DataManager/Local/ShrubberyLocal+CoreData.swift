@@ -7,8 +7,8 @@
 //
 
 import CoreData
-import RxSwift
 import RxCoreData
+import RxSwift
 
 public class ShrubberyCoreData: LocalDataService {
 //    @available(iOS 10.0, *)
@@ -76,3 +76,4 @@ public class ShrubberyCoreData: LocalDataService {
 public struct ShrubberyCoreDataConstants {
     public static let coredataName = "Shrubbery+CoreData"
 }
+

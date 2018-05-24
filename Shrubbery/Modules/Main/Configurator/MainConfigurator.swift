@@ -6,11 +6,11 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import UIKit
-import RealmSwift
 import CoreData
-import Moya
 import DataManager
+import Moya
+import RealmSwift
+import UIKit
 
 class MainModuleConfigurator {
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
@@ -42,3 +42,4 @@ class MainModuleConfigurator {
         viewController.presenter = presenter
     }
 }
+

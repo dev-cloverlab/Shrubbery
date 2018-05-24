@@ -28,3 +28,4 @@ public class ShrubberyMoyaService: RestHttpRequest, RemoteDataService {
         return request.mapString().mapToObject(FakeEntity.self)
     }
 }
+

@@ -6,11 +6,11 @@
 //  Copyright © 2017 Jieyi Wu. All rights reserved.
 //
 
-import UIKit
-import CoreData
-import SwiftyBeaver
-import DataManager
 import CommonUtil
+import CoreData
+import DataManager
+import SwiftyBeaver
+import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -66,3 +66,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 }
+

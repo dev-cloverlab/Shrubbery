@@ -6,9 +6,9 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import UIKit
-import RxSwift
 import RxCocoa
+import RxSwift
+import UIKit
 
 class MainViewController: UIViewController, MainViewInput {
     var presenter: MainPresenterInput!
@@ -31,3 +31,4 @@ class MainViewController: UIViewController, MainViewInput {
     func setupInitialState() {
     }
 }
+

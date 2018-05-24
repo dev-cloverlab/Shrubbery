@@ -25,3 +25,4 @@ public class DataRepository: DataStore {
         return local.persist(info: entity)
     }
 }
+

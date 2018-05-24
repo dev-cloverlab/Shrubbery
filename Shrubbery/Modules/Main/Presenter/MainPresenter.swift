@@ -6,8 +6,8 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import RxSwift
 import CommonUtil
+import RxSwift
 
 class MainPresenter: MainPresenterInput {
     weak var view: MainViewInput!
@@ -31,3 +31,4 @@ class MainPresenter: MainPresenterInput {
             .disposed(by: view.disposable)
     }
 }
+

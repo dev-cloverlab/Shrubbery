@@ -6,11 +6,11 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import CoreData
-import RxCoreData
-import RealmSwift
-import ObjectMapper
 import CommonUtil
+import CoreData
+import ObjectMapper
+import RealmSwift
+import RxCoreData
 
 public struct InformationEntity {
     var id: Int?
@@ -64,3 +64,4 @@ extension Info: Persistable {
         }
     }
 }
+

@@ -6,8 +6,8 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import RxSwift
 import RxAlamofire
+import RxSwift
 
 public class ShrubberyAlamofireService: RestHttpRequest, RemoteDataService {
     public init() {
@@ -19,3 +19,4 @@ public class ShrubberyAlamofireService: RestHttpRequest, RemoteDataService {
         return getRequest(uri: uri)
     }
 }
+

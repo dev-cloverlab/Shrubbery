@@ -66,3 +66,4 @@ class TempObj: Object {
     @objc dynamic var title: String = ""
     @objc dynamic var name: String = ""
 }
+

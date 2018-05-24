@@ -6,8 +6,8 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import RxSwift
 import DataManager
+import RxSwift
 
 protocol Interactable: class {
     var repository: DataStore! { get set }
@@ -28,3 +28,4 @@ extension PrimitiveSequence {
             .observeOn(MainScheduler.instance)
     }
 }
+

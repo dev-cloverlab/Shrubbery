@@ -6,12 +6,13 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
+import DataManager
 import Foundation
 import RxSwift
-import DataManager
 
 protocol MainInteractorInput: Interactable {
     func getFakeList() -> Single<FakeEntity>
 
     func saveInformationEntity(info entity: Info) -> Completable
 }
+

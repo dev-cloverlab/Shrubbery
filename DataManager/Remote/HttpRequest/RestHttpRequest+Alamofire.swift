@@ -6,9 +6,9 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import RxSwift
-import RxAlamofire
 import ObjectMapper
+import RxAlamofire
+import RxSwift
 
 protocol RestHttpRequest {
 }
@@ -24,3 +24,4 @@ extension RestHttpRequest {
         return request.mapToObject(T.self).asSingle()
     }
 }
+
