@@ -16,13 +16,21 @@ class DatabaseConfigurator: Assembly {
 
         // MARK: - Necessary Objects
 
-        container.register(NSManagedObjectContext.self) { _ in
-            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-                fatalError("Can't cast to AppDelegate!")
+        // For Core Data
+        container.register(NSPersistentContainer.self) { _ in
+            let persistentContainer = NSPersistentContainer(name: ShrubberyCoreDataConstants.coredataName)
+            persistentContainer.loadPersistentStores { _, error in
+                if let error = error {
+                    fatalError("Unresolved error, \((error as NSError).userInfo)")
+                }
             }
 
-            return appDelegate.persistentContainer.viewContext
+            return persistentContainer
         }
+        container.register(NSManagedObjectContext.self) { r in
+            r.resolve(NSPersistentContainer.self)!.viewContext
+        }
+        // For Realm
         container.register(Realm.self) { _ in
             do {
                 return try Realm()

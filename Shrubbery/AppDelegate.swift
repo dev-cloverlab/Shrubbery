@@ -7,8 +7,6 @@
 //
 
 import CommonUtil
-import CoreData
-import DataManager
 import SwiftyBeaver
 import UIKit
 
@@ -16,23 +14,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
-    // MARK: - Core Data stack upon iOS 10
-
-    @available(iOS 10.0, *)
-    lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: ShrubberyCoreDataConstants.coredataName)
-        container.loadPersistentStores { _, error in
-            if let error = error {
-                fatalError("Unresolved error, \((error as NSError).userInfo)")
-            }
-        }
-        return container
-    }()
-
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
         return true
     }
 
