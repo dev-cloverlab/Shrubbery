@@ -45,6 +45,7 @@
 		943B28A220B588E80057FAE5 /* Shrubbery+CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 943B28A020B588E80057FAE5 /* Shrubbery+CoreData.xcdatamodeld */; };
 		943B28AF20B589830057FAE5 /* CommonUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B28A820B589830057FAE5 /* CommonUtil.framework */; };
 		943B28B020B589830057FAE5 /* CommonUtil.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 943B28A820B589830057FAE5 /* CommonUtil.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9441F22F20B64B1300655BB8 /* CommonUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B28A820B589830057FAE5 /* CommonUtil.framework */; };
 		94AA21EB20B54BB900E18A8A /* DataManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AA21E420B54BB900E18A8A /* DataManager.framework */; };
 		94AA21EC20B54BB900E18A8A /* DataManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94AA21E420B54BB900E18A8A /* DataManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94EC700F20AAE785002A277E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC700E20AAE785002A277E /* MainViewController.swift */; };
@@ -57,6 +58,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		943B28AD20B589830057FAE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60700E5A2C80310458269A57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 943B28A720B589830057FAE5;
+			remoteInfo = CommonUtil;
+		};
+		9441F22D20B64B0E00655BB8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 60700E5A2C80310458269A57 /* Project object */;
 			proxyType = 1;
@@ -168,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9441F22F20B64B1300655BB8 /* CommonUtil.framework in Frameworks */,
 				D759DE48360EFE706571FA10 /* Pods_DataManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +575,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9441F22E20B64B0E00655BB8 /* PBXTargetDependency */,
 			);
 			name = DataManager;
 			productName = DataManager;
@@ -809,6 +819,11 @@
 			isa = PBXTargetDependency;
 			target = 943B28A720B589830057FAE5 /* CommonUtil */;
 			targetProxy = 943B28AD20B589830057FAE5 /* PBXContainerItemProxy */;
+		};
+		9441F22E20B64B0E00655BB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 943B28A720B589830057FAE5 /* CommonUtil */;
+			targetProxy = 9441F22D20B64B0E00655BB8 /* PBXContainerItemProxy */;
 		};
 		94AA21EA20B54BB900E18A8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
