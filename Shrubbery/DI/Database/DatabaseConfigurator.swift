@@ -33,11 +33,11 @@ class DatabaseConfigurator: Assembly {
 
         // MARK: - Provide to the others Assembly
 
-        container.register(LocalDataService.self, name: "coredata") { r in
-            ShrubberyCoreData(content: r.resolve(NSManagedObjectContext.self)!)
+        container.register(LocalDataService.self, name: "coredata") {
+            ShrubberyCoreData(content: $0.resolve(NSManagedObjectContext.self)!)
         }
-        container.register(LocalDataService.self, name: "realm") { r in
-            ShrubberyRealm(r.resolve(Realm.self)!)
+        container.register(LocalDataService.self, name: "realm") {
+            ShrubberyRealm($0.resolve(Realm.self)!)
         }
     }
 }

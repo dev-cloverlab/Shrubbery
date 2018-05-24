@@ -20,7 +20,6 @@ public class ShrubberyMoyaService: RestHttpRequest, RemoteDataService {
     }
 
     public func retrieveFakeList() -> RxSwift.Single<FakeEntity> {
-        print("Hello world")
         var request = rxProvider.request(.retrieveFakeList)
 #if DEBUG
         request = request.debug()

@@ -14,20 +14,20 @@ class RepositoryConfigurator: Assembly {
 
         // MARK: - Necessary Objects.
 
-        container.register(DataStore.self, name: "local") { r in
-            LocalDataStore(coredata: r.resolve(LocalDataService.self, name: "coredata")!,
-                           realm: r.resolve(LocalDataService.self, name: "realm")!)
+        container.register(DataStore.self, name: "local") {
+            LocalDataStore(coredata: $0.resolve(LocalDataService.self, name: "coredata")!,
+                           realm: $0.resolve(LocalDataService.self, name: "realm")!)
         }
-        container.register(DataStore.self, name: "remote") { r in
-            RemoteDataStore(alamofire: r.resolve(RemoteDataService.self, name: "alamofire")!,
-                            moya: r.resolve(RemoteDataService.self, name: "moya")!)
+        container.register(DataStore.self, name: "remote") {
+            RemoteDataStore(alamofire: $0.resolve(RemoteDataService.self, name: "alamofire")!,
+                            moya: $0.resolve(RemoteDataService.self, name: "moya")!)
         }
 
         // MARK: - Provides to others modules.
 
-        container.register(DataStore.self, name: "repo") { r in
-            DataRepository(local: r.resolve(DataStore.self, name: "local")!,
-                           remote: r.resolve(DataStore.self, name: "remote")!)
+        container.register(DataStore.self, name: "repo") {
+            DataRepository(local: $0.resolve(DataStore.self, name: "local")!,
+                           remote: $0.resolve(DataStore.self, name: "remote")!)
         }
     }
 }
