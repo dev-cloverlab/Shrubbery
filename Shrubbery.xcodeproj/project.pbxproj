@@ -26,6 +26,7 @@
 		607005056D7CD895C95C66B7 /* ShrubberyService+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700274EA9C2CD86EB22241 /* ShrubberyService+Moya.swift */; };
 		6070056B2DFEE4819DB99ABA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070046290BCEB654679F6FC /* DataStore.swift */; };
 		607005BC384CBD4B00C4AB0E /* RemoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007F076DBC4E728A43A7D /* RemoteDataStore.swift */; };
+		607005D6C57B077158FF774F /* Viper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700A3EA623B8E8CA13A585 /* Viper.swift */; };
 		607006F196B55B0FBC119388 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700069E90D46B12C7B5E41 /* Configurator.swift */; };
 		60700858C3E97C5A27B8B13E /* DatabaseConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607002AE1E336FFD81584126 /* DatabaseConfigurator.swift */; };
 		60700896BD1BE74E49C1F406 /* NetworkConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700CF7830CA0A766615BF7 /* NetworkConfigurator.swift */; };
@@ -39,6 +40,7 @@
 		60700C6A9F476DF11A340D1E /* ObjectMapper+RxExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004A3117EF09D639350ED /* ObjectMapper+RxExt.swift */; };
 		60700C6C443A347EC3CC37CD /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607008D6756ABA7F393AD059 /* Log.swift */; };
 		60700CF6D367C6FFF7220595 /* MainPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700A4751310FB333C48463 /* MainPresenterInput.swift */; };
+		60700DC03EB8E41ACB0A26D3 /* CommonConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070016FD90554C5F3CC3219 /* CommonConfigurator.swift */; };
 		60700DC8AA984D76D1097C4B /* InformationEntity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070051796EF0C5BEAB3889B /* InformationEntity+Ext.swift */; };
 		60700E3E12577891180901CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6070043634FBDBA75C6D84F2 /* LaunchScreen.storyboard */; };
 		60700ED6D43490B6AF61EF95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60700B6AC725B0A0A31874AD /* Main.storyboard */; };
@@ -108,6 +110,7 @@
 		5A2F9ED70CE617E552865876 /* MainConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 		60700069E90D46B12C7B5E41 /* Configurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		607001006CC5EEC1260E4576 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		6070016FD90554C5F3CC3219 /* CommonConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConfigurator.swift; sourceTree = "<group>"; };
 		6070020F1B7C6A1D95037D4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		6070024B44EC6C940EC3D1BC /* RemoteDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataService.swift; sourceTree = "<group>"; };
 		60700274EA9C2CD86EB22241 /* ShrubberyService+Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyService+Moya.swift"; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 		6070084280D7DE46259B4832 /* RestHttpRequest+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestHttpRequest+Alamofire.swift"; sourceTree = "<group>"; };
 		607008B92A46B92FAECA7ACC /* RepositoryConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryConfigurator.swift; sourceTree = "<group>"; };
 		607008D6756ABA7F393AD059 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		60700A3EA623B8E8CA13A585 /* Viper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viper.swift; sourceTree = "<group>"; };
 		60700A4751310FB333C48463 /* MainPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenterInput.swift; sourceTree = "<group>"; };
 		60700AAF7A833D9F837844DC /* ObjectExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectExt.swift; sourceTree = "<group>"; };
 		60700B528755C1C863EFAAAB /* Viewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
@@ -313,6 +317,8 @@
 				6070007A0556EFCD0815D563 /* Network */,
 				60700A561047E3761C78DA85 /* Database */,
 				607008B92A46B92FAECA7ACC /* RepositoryConfigurator.swift */,
+				60700761C49183A26EE051BF /* Feature */,
+				6070016FD90554C5F3CC3219 /* CommonConfigurator.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -405,6 +411,14 @@
 				60700442E4382BF75D44E923 /* Routable.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		60700761C49183A26EE051BF /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				60700A3EA623B8E8CA13A585 /* Viper.swift */,
+			);
+			path = Feature;
 			sourceTree = "<group>";
 		};
 		6070078D28ED5F1E86C9FC19 /* Repositories */ = {
@@ -823,6 +837,8 @@
 				60700896BD1BE74E49C1F406 /* NetworkConfigurator.swift in Sources */,
 				60700858C3E97C5A27B8B13E /* DatabaseConfigurator.swift in Sources */,
 				6070016114430A6F8915010E /* RepositoryConfigurator.swift in Sources */,
+				607005D6C57B077158FF774F /* Viper.swift in Sources */,
+				60700DC03EB8E41ACB0A26D3 /* CommonConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

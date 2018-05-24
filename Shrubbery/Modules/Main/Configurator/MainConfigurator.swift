@@ -12,7 +12,7 @@ import Moya
 import RealmSwift
 import UIKit
 
-class MainModuleConfigurator: Configurator {
+class MainModuleConfigurator: ViperInjector {
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
         if let viewController = viewInput as? MainViewController {
             configure(viewController: viewController)
@@ -23,15 +23,7 @@ class MainModuleConfigurator: Configurator {
 
         // MARK: - Data Manager
 
-        let repository = provider.resolver.resolve(DataStore.self, name: "repo")!
-
-        let interactor = MainInteractor(repository: repository)
-        let router = MainRouter()
-        let presenter = MainPresenter()
-
-        presenter.view = viewController
-        presenter.router = router
-        presenter.interactor = interactor
+        let presenter = viperProvider.resolve(MainPresenter.self, argument: viewController)!
         viewController.presenter = presenter
     }
 }

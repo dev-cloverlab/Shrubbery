@@ -12,9 +12,10 @@ protocol Configurator {
 }
 
 extension Configurator {
-    var provider: Assembler {
+    var assembler: Assembler {
         return Assembler([NetworkConfigurator(),
                           DatabaseConfigurator(),
-                          RepositoryConfigurator()])
+                          RepositoryConfigurator(),
+                          CommonConfigurator()])
     }
 }
