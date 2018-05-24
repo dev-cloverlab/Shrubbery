@@ -8,7 +8,6 @@
 
 import RxSwift
 import RxAlamofire
-import ObjectMapper
 
 public class ShrubberyAlamofireService: RestHttpRequest, RemoteDataService {
     public init() {

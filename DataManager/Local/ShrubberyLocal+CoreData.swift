@@ -9,7 +9,6 @@
 import CoreData
 import RxSwift
 import RxCoreData
-import ObjectMapper
 
 public class ShrubberyCoreData: LocalDataService {
 //    @available(iOS 10.0, *)
