@@ -12,10 +12,9 @@ protocol Configurator {
 }
 
 extension Configurator {
-    fileprivate var parentContainer: Container {
-        let container = Container { _ in
-        }
-
-        return container
+    var provider: Assembler {
+        return Assembler([NetworkConfigurator(),
+                          DatabaseConfigurator(),
+                          RepositoryConfigurator()])
     }
 }

@@ -23,16 +23,7 @@ class MainModuleConfigurator: Configurator {
 
         // MARK: - Data Manager
 
-        let coreDataContext: NSManagedObjectContext! = {
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            return appDelegate.persistentContainer.viewContext
-        }()
-        let coredata = ShrubberyCoreData(content: coreDataContext)
-        let realm = ShrubberyRealm(try! Realm())
-        let alamofireRemote = ShrubberyAlamofireService()
-        let moyaRemote = ShrubberyMoyaService(MoyaProvider<ShrubberyMoyaConfig>())
-        let repository = DataRepository(local: LocalDataStore(coredata: coredata, realm: realm),
-                                        remote: RemoteDataStore(alamofire: alamofireRemote, moya: moyaRemote))
+        let repository = provider.resolver.resolve(DataStore.self, name: "repo")!
 
         let interactor = MainInteractor(repository: repository)
         let router = MainRouter()

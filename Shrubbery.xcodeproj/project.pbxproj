@@ -13,6 +13,7 @@
 		397131E5DEED8F6BF696DA33 /* Pods_Shrubbery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945C1D9720AA8CE700BBC574 /* Pods_Shrubbery.framework */; };
 		42D5CA22E873274288930756 /* MainInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3B3DE7674A5E93E8A579E4 /* MainInitializer.swift */; };
 		6070006B46933E4FAE11D4EF /* LocalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700BFE41BF3741DC62728E /* LocalDataStore.swift */; };
+		6070016114430A6F8915010E /* RepositoryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607008B92A46B92FAECA7ACC /* RepositoryConfigurator.swift */; };
 		607001CB04A220A60DAB90BF /* RemoteDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070024B44EC6C940EC3D1BC /* RemoteDataService.swift */; };
 		607002515045DB251D0E1BEE /* ShrubberyConfig+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004B302A5C270B70E1D4D /* ShrubberyConfig+Alamofire.swift */; };
 		6070030AAF8A53ECBF9F3E92 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004300B25EB63DD36A2BB /* Constants.swift */; };
@@ -26,6 +27,8 @@
 		6070056B2DFEE4819DB99ABA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070046290BCEB654679F6FC /* DataStore.swift */; };
 		607005BC384CBD4B00C4AB0E /* RemoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007F076DBC4E728A43A7D /* RemoteDataStore.swift */; };
 		607006F196B55B0FBC119388 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700069E90D46B12C7B5E41 /* Configurator.swift */; };
+		60700858C3E97C5A27B8B13E /* DatabaseConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607002AE1E336FFD81584126 /* DatabaseConfigurator.swift */; };
+		60700896BD1BE74E49C1F406 /* NetworkConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700CF7830CA0A766615BF7 /* NetworkConfigurator.swift */; };
 		607008B720D0297A740DFB16 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F8E24448458AFDAD6E3 /* DataRepository.swift */; };
 		6070090E3AA1C66CB0F002AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */; };
 		60700A029AC448A1F7845578 /* ObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700AAF7A833D9F837844DC /* ObjectExt.swift */; };
@@ -108,6 +111,7 @@
 		6070020F1B7C6A1D95037D4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		6070024B44EC6C940EC3D1BC /* RemoteDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataService.swift; sourceTree = "<group>"; };
 		60700274EA9C2CD86EB22241 /* ShrubberyService+Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyService+Moya.swift"; sourceTree = "<group>"; };
+		607002AE1E336FFD81584126 /* DatabaseConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseConfigurator.swift; sourceTree = "<group>"; };
 		607003C6FDB1A5F53C57F1A5 /* Interactable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Interactable+Ext.swift"; sourceTree = "<group>"; };
 		60700409A7AA20EE6069131D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		607004300B25EB63DD36A2BB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 		60700815BD0234BE50822A68 /* ShrubberyLocal+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyLocal+CoreData.swift"; sourceTree = "<group>"; };
 		60700819AB74A90064526F85 /* ShrubberyLocal+Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyLocal+Realm.swift"; sourceTree = "<group>"; };
 		6070084280D7DE46259B4832 /* RestHttpRequest+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestHttpRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		607008B92A46B92FAECA7ACC /* RepositoryConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryConfigurator.swift; sourceTree = "<group>"; };
 		607008D6756ABA7F393AD059 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		60700A4751310FB333C48463 /* MainPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenterInput.swift; sourceTree = "<group>"; };
 		60700AAF7A833D9F837844DC /* ObjectExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectExt.swift; sourceTree = "<group>"; };
@@ -133,6 +138,7 @@
 		60700B6AC725B0A0A31874AD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		60700BF1266C1723ECA3B3FB /* ShrubberyService+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyService+Alamofire.swift"; sourceTree = "<group>"; };
 		60700BFE41BF3741DC62728E /* LocalDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataStore.swift; sourceTree = "<group>"; };
+		60700CF7830CA0A766615BF7 /* NetworkConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfigurator.swift; sourceTree = "<group>"; };
 		60700E0B354BCD788E706105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60700F8E24448458AFDAD6E3 /* DataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		60700F94744ABAB1634D7051 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -229,6 +235,14 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		6070007A0556EFCD0815D563 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				60700CF7830CA0A766615BF7 /* NetworkConfigurator.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		6070011543AA2EB2A47D77B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +310,9 @@
 			isa = PBXGroup;
 			children = (
 				60700069E90D46B12C7B5E41 /* Configurator.swift */,
+				6070007A0556EFCD0815D563 /* Network */,
+				60700A561047E3761C78DA85 /* Database */,
+				607008B92A46B92FAECA7ACC /* RepositoryConfigurator.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -414,6 +431,14 @@
 				607007F076DBC4E728A43A7D /* RemoteDataStore.swift */,
 			);
 			path = DataStore;
+			sourceTree = "<group>";
+		};
+		60700A561047E3761C78DA85 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				607002AE1E336FFD81584126 /* DatabaseConfigurator.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		60700ACC68DEB49920F2525D /* HttpRequest */ = {
@@ -795,6 +820,9 @@
 				60700F2A4D066867635B92EB /* Routable.swift in Sources */,
 				60700B79FAF114E3A533FCC1 /* Viewable.swift in Sources */,
 				607006F196B55B0FBC119388 /* Configurator.swift in Sources */,
+				60700896BD1BE74E49C1F406 /* NetworkConfigurator.swift in Sources */,
+				60700858C3E97C5A27B8B13E /* DatabaseConfigurator.swift in Sources */,
+				6070016114430A6F8915010E /* RepositoryConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
