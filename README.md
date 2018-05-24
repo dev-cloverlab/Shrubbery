@@ -1,6 +1,6 @@
 # Shrubbery
 
-A showcase for an iOS+Swift app, the concept is the same as the ** [Kloveroid](https://github.com/dev-cloverlab/Kloveroid) **. We hope can provide a
+A showcase for an iOS+Swift app, the concept is the same as the [Kloveroid](https://github.com/dev-cloverlab/Kloveroid). We hope can provide a
 complete iOS basic architecture. Once we have a need to build an app, developers can focus on the
 business flow/logic and don't have to create from 0 again and again.
 
@@ -8,7 +8,7 @@ business flow/logic and don't have to create from 0 again and again.
 
 This project mixes two current popular architectures, one is **VIPER**, another is **Clean
 Architecture**. We keep the benefits from those two architectures and Repository Pattern,
-additionally, they're modified as following ** [Kloveroid](https://github.com/dev-cloverlab/Kloveroid) ** project.
+additionally, they're modified as following [Kloveroid](https://github.com/dev-cloverlab/Kloveroid) project.
 
 - VIPER
   - View
