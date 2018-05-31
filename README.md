@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/13f03e169ef2453cb2e5a2574072bd6d)](https://www.codacy.com/app/pokk/Shrubbery?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dev-cloverlab/Shrubbery&amp;utm_campaign=Badge_Grade)
+
 # Shrubbery
 
 A showcase for an iOS+Swift app, the concept is the same as the [Kloveroid](https://github.com/dev-cloverlab/Kloveroid). We hope can provide a
