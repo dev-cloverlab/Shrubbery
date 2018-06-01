@@ -24,10 +24,15 @@ extension ViperInjector {
                 MainInteractor(repository: repo)
             }
             container.register(MainRouter.self) { _ in
-                MainRouter()
+                let router = MainRouter()
+
+                router
+
+                return router
             }
             container.register(MainPresenter.self) { (_, viewController: MainViewController) in
                 let presenter = MainPresenter()
+
                 presenter.router = container.resolve(MainRouter.self)!
                 presenter.interactor = container.resolve(MainInteractor.self)!
                 presenter.view = viewController

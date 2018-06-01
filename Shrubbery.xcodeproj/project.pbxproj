@@ -17,7 +17,7 @@
 		607001CB04A220A60DAB90BF /* RemoteDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070024B44EC6C940EC3D1BC /* RemoteDataService.swift */; };
 		607002515045DB251D0E1BEE /* ShrubberyConfig+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004B302A5C270B70E1D4D /* ShrubberyConfig+Alamofire.swift */; };
 		6070030AAF8A53ECBF9F3E92 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004300B25EB63DD36A2BB /* Constants.swift */; };
-		607003173AD4A19D3FF31116 /* Interactable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607003C6FDB1A5F53C57F1A5 /* Interactable+Ext.swift */; };
+		607003173AD4A19D3FF31116 /* Interactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607003C6FDB1A5F53C57F1A5 /* Interactable.swift */; };
 		607003B9C0D1F7F495F4011A /* ShrubberyConfig+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607004FDE451F7AB945AE21F /* ShrubberyConfig+Moya.swift */; };
 		6070046D1BA4EF930754875A /* LocalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607006109FFBEC7FE6E84A8B /* LocalDataService.swift */; };
 		607004B6F9BC3BB243FF9C7A /* ShrubberyService+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700BF1266C1723ECA3B3FB /* ShrubberyService+Alamofire.swift */; };
@@ -28,6 +28,7 @@
 		607005BC384CBD4B00C4AB0E /* RemoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007F076DBC4E728A43A7D /* RemoteDataStore.swift */; };
 		607005D6C57B077158FF774F /* Viper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700A3EA623B8E8CA13A585 /* Viper.swift */; };
 		607006F196B55B0FBC119388 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700069E90D46B12C7B5E41 /* Configurator.swift */; };
+		60700717C1167FFC023C0182 /* Interactor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700E635BEA1AF9DDA8B044 /* Interactor+Extension.swift */; };
 		60700858C3E97C5A27B8B13E /* DatabaseConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607002AE1E336FFD81584126 /* DatabaseConfigurator.swift */; };
 		60700896BD1BE74E49C1F406 /* NetworkConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700CF7830CA0A766615BF7 /* NetworkConfigurator.swift */; };
 		607008B720D0297A740DFB16 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700F8E24448458AFDAD6E3 /* DataRepository.swift */; };
@@ -43,6 +44,7 @@
 		60700DC03EB8E41ACB0A26D3 /* CommonConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070016FD90554C5F3CC3219 /* CommonConfigurator.swift */; };
 		60700DC8AA984D76D1097C4B /* InformationEntity+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070051796EF0C5BEAB3889B /* InformationEntity+Ext.swift */; };
 		60700E3E12577891180901CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6070043634FBDBA75C6D84F2 /* LaunchScreen.storyboard */; };
+		60700EA7D85DAD2E540E7200 /* Router+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070080E081141C396D3BE29 /* Router+Extension.swift */; };
 		60700ED6D43490B6AF61EF95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60700B6AC725B0A0A31874AD /* Main.storyboard */; };
 		60700F2A4D066867635B92EB /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700442E4382BF75D44E923 /* Routable.swift */; };
 		60700FAFAB3F5FBD520E1519 /* RestHttpRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070084280D7DE46259B4832 /* RestHttpRequest+Alamofire.swift */; };
@@ -115,7 +117,7 @@
 		6070024B44EC6C940EC3D1BC /* RemoteDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataService.swift; sourceTree = "<group>"; };
 		60700274EA9C2CD86EB22241 /* ShrubberyService+Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyService+Moya.swift"; sourceTree = "<group>"; };
 		607002AE1E336FFD81584126 /* DatabaseConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseConfigurator.swift; sourceTree = "<group>"; };
-		607003C6FDB1A5F53C57F1A5 /* Interactable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Interactable+Ext.swift"; sourceTree = "<group>"; };
+		607003C6FDB1A5F53C57F1A5 /* Interactable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactable.swift; sourceTree = "<group>"; };
 		60700409A7AA20EE6069131D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		607004300B25EB63DD36A2BB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		60700442E4382BF75D44E923 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		607007C2D10FCCD7F7FAD0B5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607007F076DBC4E728A43A7D /* RemoteDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataStore.swift; sourceTree = "<group>"; };
 		607007F5D53A13DFB20FF58F /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		6070080E081141C396D3BE29 /* Router+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Extension.swift"; sourceTree = "<group>"; };
 		60700815BD0234BE50822A68 /* ShrubberyLocal+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyLocal+CoreData.swift"; sourceTree = "<group>"; };
 		60700819AB74A90064526F85 /* ShrubberyLocal+Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShrubberyLocal+Realm.swift"; sourceTree = "<group>"; };
 		6070084280D7DE46259B4832 /* RestHttpRequest+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RestHttpRequest+Alamofire.swift"; sourceTree = "<group>"; };
@@ -144,6 +147,7 @@
 		60700BFE41BF3741DC62728E /* LocalDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataStore.swift; sourceTree = "<group>"; };
 		60700CF7830CA0A766615BF7 /* NetworkConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfigurator.swift; sourceTree = "<group>"; };
 		60700E0B354BCD788E706105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60700E635BEA1AF9DDA8B044 /* Interactor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Interactor+Extension.swift"; sourceTree = "<group>"; };
 		60700F8E24448458AFDAD6E3 /* DataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		60700F94744ABAB1634D7051 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		65D811776866E895D5A5F1B5 /* MainRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouterInput.swift; sourceTree = "<group>"; };
@@ -370,7 +374,8 @@
 		607005DE9BD9F5C8A815D134 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				607003C6FDB1A5F53C57F1A5 /* Interactable+Ext.swift */,
+				607003C6FDB1A5F53C57F1A5 /* Interactable.swift */,
+				60700E635BEA1AF9DDA8B044 /* Interactor+Extension.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -409,6 +414,7 @@
 			isa = PBXGroup;
 			children = (
 				60700442E4382BF75D44E923 /* Routable.swift */,
+				6070080E081141C396D3BE29 /* Router+Extension.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -829,7 +835,7 @@
 				943B28A220B588E80057FAE5 /* Shrubbery+CoreData.xcdatamodeld in Sources */,
 				42D5CA22E873274288930756 /* MainInitializer.swift in Sources */,
 				60700CF6D367C6FFF7220595 /* MainPresenterInput.swift in Sources */,
-				607003173AD4A19D3FF31116 /* Interactable+Ext.swift in Sources */,
+				607003173AD4A19D3FF31116 /* Interactable.swift in Sources */,
 				60700FDD11189C73C18E68F0 /* Presentable.swift in Sources */,
 				60700F2A4D066867635B92EB /* Routable.swift in Sources */,
 				60700B79FAF114E3A533FCC1 /* Viewable.swift in Sources */,
@@ -839,6 +845,8 @@
 				6070016114430A6F8915010E /* RepositoryConfigurator.swift in Sources */,
 				607005D6C57B077158FF774F /* Viper.swift in Sources */,
 				60700DC03EB8E41ACB0A26D3 /* CommonConfigurator.swift in Sources */,
+				60700717C1167FFC023C0182 /* Interactor+Extension.swift in Sources */,
+				60700EA7D85DAD2E540E7200 /* Router+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
