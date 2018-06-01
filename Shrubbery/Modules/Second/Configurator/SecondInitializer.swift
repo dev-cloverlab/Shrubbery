@@ -13,7 +13,6 @@ class SecondModuleInitializer: NSObject {
     @IBOutlet weak var secondViewController: SecondViewController!
 
     override func awakeFromNib() {
-
         let configurator = SecondModuleConfigurator()
         configurator.configureModuleForViewInput(viewInput: secondViewController)
     }

@@ -13,7 +13,8 @@ import UIKit
 class MainViewController: UIViewController, MainViewInput {
     var presenter: MainPresenterInput!
     var disposable = DisposeBag()
-
+    @IBOutlet weak var btnGoToNext: UIButton!
+    
     // MARK: - Life cycle
 
     override func viewDidLoad() {

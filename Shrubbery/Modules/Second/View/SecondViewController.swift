@@ -12,7 +12,8 @@ import UIKit
 class SecondViewController: UIViewController, SecondViewInput {
     var presenter: SecondPresentInput!
     var disposable = DisposeBag()
-
+    @IBOutlet weak var btnBack: UIButton!
+    
     // MARK: Life cycle
 
     override func viewDidLoad() {
