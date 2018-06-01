@@ -9,18 +9,23 @@
 import RxCocoa
 import RxSwift
 import UIKit
+import CommonUtil
 
 class MainViewController: UIViewController, MainViewInput {
     var presenter: MainPresenterInput!
     var disposable = DisposeBag()
     @IBOutlet weak var btnGoToNext: UIButton!
-    
+
     // MARK: - Life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         presenter.viewIsReady()
+
+        btnGoToNext.rx.tap.subscribe(onNext: {
+            self.presenter.gotoNext(vc: self)
+        }).disposed(by: disposable)
     }
 
     override func viewDidAppear(_ animated: Bool) {

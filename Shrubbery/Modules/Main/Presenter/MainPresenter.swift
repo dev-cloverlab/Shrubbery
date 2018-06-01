@@ -30,4 +30,8 @@ class MainPresenter: MainPresenterInput {
             }
             .disposed(by: view.disposable)
     }
+
+    func gotoNext(vc: UIKit.UIViewController) {
+        router.navigateToSecond(vc: vc)
+    }
 }

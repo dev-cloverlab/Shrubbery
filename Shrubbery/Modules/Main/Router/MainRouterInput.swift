@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
 
 protocol MainRouterInput: Routable {
+    func navigateToSecond(vc: UIViewController)
 }

@@ -6,6 +6,8 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
+import UIKit
+
 protocol MainPresenterInput: Presentable {
     weak var view: MainViewInput! { get set }
     var interactor: MainInteractor! { get set }
@@ -14,4 +16,6 @@ protocol MainPresenterInput: Presentable {
     func viewIsReady()
 
     func getList()
+
+    func gotoNext(vc: UIViewController)
 }

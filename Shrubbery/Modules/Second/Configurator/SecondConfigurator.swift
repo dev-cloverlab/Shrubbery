@@ -16,5 +16,10 @@ class SecondModuleConfigurator: ViperInjector {
     }
 
     private func configure(viewController: SecondViewController) {
+
+        // MARK: - Data Manager
+
+        let presenter = viperProvider.resolve(SecondPresenter.self, argument: viewController)!
+        viewController.presenter = presenter
     }
 }
