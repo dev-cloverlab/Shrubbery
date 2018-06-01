@@ -7,7 +7,6 @@
 //
 
 import DataManager
-import Foundation
 import RxSwift
 
 protocol MainInteractorInput: Interactable {

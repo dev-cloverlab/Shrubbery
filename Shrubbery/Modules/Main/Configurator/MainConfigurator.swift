@@ -6,10 +6,6 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
-import CoreData
-import DataManager
-import Moya
-import RealmSwift
 import UIKit
 
 class MainModuleConfigurator: ViperInjector {

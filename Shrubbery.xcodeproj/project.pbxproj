@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0365AD0B56B7287CA8B75C52 /* SecondViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214C6C57832CF1FB00B70DD /* SecondViewInput.swift */; };
 		0DFD7D94E21344D8ED2F2A0B /* MainInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF78C9C7BA6E6F7189A418 /* MainInteractorInput.swift */; };
 		260AB9CACCAD38ABACB8778A /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783A0880B3DF42B3F8A78C19 /* MainRouter.swift */; };
 		2A9FBE33F19BD040D88783D9 /* MainRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D811776866E895D5A5F1B5 /* MainRouterInput.swift */; };
 		397131E5DEED8F6BF696DA33 /* Pods_Shrubbery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945C1D9720AA8CE700BBC574 /* Pods_Shrubbery.framework */; };
 		42D5CA22E873274288930756 /* MainInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3B3DE7674A5E93E8A579E4 /* MainInitializer.swift */; };
+		44CFE424772377CDFA0AF87C /* SecondConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB01B7E16EB6BF84D2BD3D1 /* SecondConfigurator.swift */; };
 		6070006B46933E4FAE11D4EF /* LocalDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60700BFE41BF3741DC62728E /* LocalDataStore.swift */; };
 		6070016114430A6F8915010E /* RepositoryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607008B92A46B92FAECA7ACC /* RepositoryConfigurator.swift */; };
 		607001CB04A220A60DAB90BF /* RemoteDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070024B44EC6C940EC3D1BC /* RemoteDataService.swift */; };
@@ -50,6 +52,9 @@
 		60700FAFAB3F5FBD520E1519 /* RestHttpRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070084280D7DE46259B4832 /* RestHttpRequest+Alamofire.swift */; };
 		60700FDD11189C73C18E68F0 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607007F5D53A13DFB20FF58F /* Presentable.swift */; };
 		72FA25F0B2D5BA80AEF922EA /* Pods_CommonUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5BBE73CB9ADC77469DEF41 /* Pods_CommonUtil.framework */; };
+		73DB7F16CFCFF0FB7DEBFC31 /* SecondInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDDE3A6C4E153850621FD0C /* SecondInitializer.swift */; };
+		789D0F777C35B029C9476357 /* SecondInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AF4CE9E38204C94B70C3E /* SecondInteractor.swift */; };
+		8FA2713D47FDB94AA9253A56 /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE211816D92A6147BD49D8 /* SecondPresenter.swift */; };
 		943B28A220B588E80057FAE5 /* Shrubbery+CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 943B28A020B588E80057FAE5 /* Shrubbery+CoreData.xcdatamodeld */; };
 		943B28AF20B589830057FAE5 /* CommonUtil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B28A820B589830057FAE5 /* CommonUtil.framework */; };
 		943B28B020B589830057FAE5 /* CommonUtil.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 943B28A820B589830057FAE5 /* CommonUtil.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -58,9 +63,14 @@
 		94AA21EC20B54BB900E18A8A /* DataManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94AA21E420B54BB900E18A8A /* DataManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94EC700F20AAE785002A277E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC700E20AAE785002A277E /* MainViewController.swift */; };
 		954A87D53B2247AEEC6C0CCC /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F9ED70CE617E552865876 /* MainConfigurator.swift */; };
+		A459EE4E3889D6394E24E6E3 /* SecondInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43D629857AC34168E04FE00 /* SecondInteractorInput.swift */; };
 		AFFA748641539BA8E17525CC /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82414F08BAEC0034F65A4047 /* MainPresenter.swift */; };
+		B53A0224EB37AAB97CC84CEE /* SecondRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8EAEC68B99EEFA801F6FE9 /* SecondRouterInput.swift */; };
+		C185558B1021F59D738AD880 /* SecondPresentInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02A7FBD2E6E4C786757551A /* SecondPresentInput.swift */; };
 		D759DE48360EFE706571FA10 /* Pods_DataManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F5505F3217CBE922583094 /* Pods_DataManager.framework */; };
 		DB0AFAB6EF029C6DAA11C590 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB8EDACD34199A5A5ECBCCE /* MainInteractor.swift */; };
+		E5FB56B1747541409A3BD44B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8E9241245B53165CAD0A3 /* SecondViewController.swift */; };
+		F45DA2718154A8883D69D814 /* SecondRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C25E8C4B52053706BA7B94 /* SecondRouter.swift */; };
 		FD1E79476EDB821BA0E3DDEC /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB307D1D1E560DECD6F13B /* MainViewInput.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,9 +116,12 @@
 /* Begin PBXFileReference section */
 		0C5BBE73CB9ADC77469DEF41 /* Pods_CommonUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12AE27D383FD2C8A4418B790 /* Pods-Shrubbery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shrubbery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shrubbery/Pods-Shrubbery.release.xcconfig"; sourceTree = "<group>"; };
+		1BB8E9241245B53165CAD0A3 /* SecondViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		29F5505F3217CBE922583094 /* Pods_DataManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4214C6C57832CF1FB00B70DD /* SecondViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondViewInput.swift; sourceTree = "<group>"; };
 		4AE5FA136FD00E5428A1957B /* Pods-Shrubbery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shrubbery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shrubbery/Pods-Shrubbery.debug.xcconfig"; sourceTree = "<group>"; };
 		4D8D7860FDA0F70392A600CB /* Pods-DataManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataManager/Pods-DataManager.debug.xcconfig"; sourceTree = "<group>"; };
+		55C25E8C4B52053706BA7B94 /* SecondRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondRouter.swift; sourceTree = "<group>"; };
 		5A2F9ED70CE617E552865876 /* MainConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 		60700069E90D46B12C7B5E41 /* Configurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		607001006CC5EEC1260E4576 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -151,6 +164,7 @@
 		60700F8E24448458AFDAD6E3 /* DataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		60700F94744ABAB1634D7051 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		65D811776866E895D5A5F1B5 /* MainRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouterInput.swift; sourceTree = "<group>"; };
+		6BB01B7E16EB6BF84D2BD3D1 /* SecondConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondConfigurator.swift; sourceTree = "<group>"; };
 		783A0880B3DF42B3F8A78C19 /* MainRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		78C5A311695030D8C18BFCDE /* Pods-CommonUtil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonUtil.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonUtil/Pods-CommonUtil.debug.xcconfig"; sourceTree = "<group>"; };
 		82414F08BAEC0034F65A4047 /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
@@ -163,8 +177,14 @@
 		94EC700E20AAE785002A277E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		96DF78C9C7BA6E6F7189A418 /* MainInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractorInput.swift; sourceTree = "<group>"; };
 		AC6A6986FD41FB828D0DF90B /* Pods_Shrubbery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shrubbery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8EAEC68B99EEFA801F6FE9 /* SecondRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondRouterInput.swift; sourceTree = "<group>"; };
+		B0CE211816D92A6147BD49D8 /* SecondPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
+		B33AF4CE9E38204C94B70C3E /* SecondInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondInteractor.swift; sourceTree = "<group>"; };
 		BCFB307D1D1E560DECD6F13B /* MainViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewInput.swift; sourceTree = "<group>"; };
+		C02A7FBD2E6E4C786757551A /* SecondPresentInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondPresentInput.swift; sourceTree = "<group>"; };
 		C094B4020289FCF3AAAA9A16 /* Pods-CommonUtil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonUtil.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonUtil/Pods-CommonUtil.release.xcconfig"; sourceTree = "<group>"; };
+		D43D629857AC34168E04FE00 /* SecondInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondInteractorInput.swift; sourceTree = "<group>"; };
+		EDDDE3A6C4E153850621FD0C /* SecondInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecondInitializer.swift; sourceTree = "<group>"; };
 		FE3B3DE7674A5E93E8A579E4 /* MainInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInitializer.swift; sourceTree = "<group>"; };
 		FEB8EDACD34199A5A5ECBCCE /* MainInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,6 +231,36 @@
 				C094B4020289FCF3AAAA9A16 /* Pods-CommonUtil.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		014D93270BF8C004540D595F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4214C6C57832CF1FB00B70DD /* SecondViewInput.swift */,
+				1BB8E9241245B53165CAD0A3 /* SecondViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02FA424F3DBDAB4974E4B9DE /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				6BB01B7E16EB6BF84D2BD3D1 /* SecondConfigurator.swift */,
+				EDDDE3A6C4E153850621FD0C /* SecondInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		13BBFD33E50CF9018B3A0D0D /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				014D93270BF8C004540D595F /* View */,
+				DABEB8B9580A0314CE32A164 /* Presenter */,
+				81DAFE9E8C5612FED6406556 /* Interactor */,
+				817235C832D0D35F4AF9618F /* Router */,
+				02FA424F3DBDAB4974E4B9DE /* Configurator */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 		19B89C6E911ECC81AB124323 /* Configurator */ = {
@@ -299,6 +349,7 @@
 			children = (
 				5DD3145E08FCB2A2A0962814 /* Main */,
 				607003415A2AA3C182251FB5 /* Base */,
+				13BBFD33E50CF9018B3A0D0D /* Second */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -504,6 +555,24 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		817235C832D0D35F4AF9618F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AF8EAEC68B99EEFA801F6FE9 /* SecondRouterInput.swift */,
+				55C25E8C4B52053706BA7B94 /* SecondRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		81DAFE9E8C5612FED6406556 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D43D629857AC34168E04FE00 /* SecondInteractorInput.swift */,
+				B33AF4CE9E38204C94B70C3E /* SecondInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		889D696D8F5BBE859E9F9125 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,6 +621,15 @@
 				60700B6AC725B0A0A31874AD /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DABEB8B9580A0314CE32A164 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C02A7FBD2E6E4C786757551A /* SecondPresentInput.swift */,
+				B0CE211816D92A6147BD49D8 /* SecondPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		E536AB415AC33EF0B43DDB32 /* Frameworks */ = {
@@ -847,6 +925,16 @@
 				60700DC03EB8E41ACB0A26D3 /* CommonConfigurator.swift in Sources */,
 				60700717C1167FFC023C0182 /* Interactor+Extension.swift in Sources */,
 				60700EA7D85DAD2E540E7200 /* Router+Extension.swift in Sources */,
+				0365AD0B56B7287CA8B75C52 /* SecondViewInput.swift in Sources */,
+				E5FB56B1747541409A3BD44B /* SecondViewController.swift in Sources */,
+				C185558B1021F59D738AD880 /* SecondPresentInput.swift in Sources */,
+				8FA2713D47FDB94AA9253A56 /* SecondPresenter.swift in Sources */,
+				A459EE4E3889D6394E24E6E3 /* SecondInteractorInput.swift in Sources */,
+				789D0F777C35B029C9476357 /* SecondInteractor.swift in Sources */,
+				B53A0224EB37AAB97CC84CEE /* SecondRouterInput.swift in Sources */,
+				F45DA2718154A8883D69D814 /* SecondRouter.swift in Sources */,
+				44CFE424772377CDFA0AF87C /* SecondConfigurator.swift in Sources */,
+				73DB7F16CFCFF0FB7DEBFC31 /* SecondInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

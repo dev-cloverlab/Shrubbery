@@ -6,5 +6,8 @@
 //  Copyright © 2018 CloverLab. Inc. All rights reserved.
 //
 
+import RxSwift
+
 protocol Viewable: class {
+    var disposable: DisposeBag { get set }
 }
