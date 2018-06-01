@@ -13,6 +13,8 @@ target 'Shrubbery' do
   pod 'RxKingfisher', '~> 0.1.1'
   pod 'Kingfisher', '~> 4.8.0'
 
+  pod 'ZRouter', '~> 1.0.0'
+
   # For Logging
   pod 'SwiftyBeaver'
 
