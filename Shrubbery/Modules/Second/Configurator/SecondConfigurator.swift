@@ -8,10 +8,8 @@
 
 import UIKit
 
-class SecondModuleConfigurator {
-
+class SecondModuleConfigurator: ViperInjector {
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
-
         if let viewController = viewInput as? SecondViewController {
             configure(viewController: viewController)
         }

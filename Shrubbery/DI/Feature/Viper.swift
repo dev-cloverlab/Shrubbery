@@ -40,6 +40,28 @@ extension ViperInjector {
                 return presenter
             }
 
+            // MARK: - Second
+
+            container.register(SecondInteractor.self) { _ in
+                SecondInteractor(repository: repo)
+            }
+            container.register(SecondRouter.self) { _ in
+                let router = SecondRouter()
+
+                router
+
+                return router
+            }
+            container.register(SecondPresenter.self) { (_, viewController: SecondViewController) in
+                let presenter = SecondPresenter()
+
+                presenter.router = container.resolve(SecondRouter.self)!
+                presenter.interactor = container.resolve(SecondInteractor.self)!
+                presenter.view = viewController
+
+                return presenter
+            }
+
             // TODO: Add your viper objects below.
         }
     }
